@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3157003241	Test			\Default Work Unit\Test	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1046207269	Test	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Linux\SFX\PM_BB_DI_1_115BPM_Dmin_C_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test		4808412
+
