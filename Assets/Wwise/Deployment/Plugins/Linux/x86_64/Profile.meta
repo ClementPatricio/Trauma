@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 0600ffcbe60849c40b47450706962085
+=======
+guid: c17c02aeebd6c984197ff84d7e1fcacb
+>>>>>>> laBrancheDuReparateur
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
