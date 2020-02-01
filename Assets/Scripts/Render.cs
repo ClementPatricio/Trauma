@@ -37,3 +37,4 @@ public class Render : MonoBehaviour
         //mat.SetFloat("time", Mathf.Sin(Time.realtimeSinceStartup*40.0f));
     }
 }
+

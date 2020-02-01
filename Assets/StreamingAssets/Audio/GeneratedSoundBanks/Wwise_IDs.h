@@ -13,9 +13,11 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID AMB_FOREST = 1006024461U;
         static const AkUniqueID AMB_LFO_SOUND = 814782759U;
         static const AkUniqueID MUSIC_MUSICBOX = 3645673277U;
         static const AkUniqueID MUSIC_STOP_MECHANIC = 3456893342U;
+        static const AkUniqueID SFX_CAT = 481770683U;
         static const AkUniqueID SFX_FIRE = 2540328137U;
         static const AkUniqueID TEST = 3157003241U;
     } // namespace EVENTS

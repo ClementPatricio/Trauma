@@ -12,7 +12,14 @@
    "ExternalSourcesOutputRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\WwiseProjects\\WwiseGlobalGameJam20.git\\trunk\\GeneratedSoundBanks\\Linux"
   },
   "DialogueEvents": [],
-  "StreamedFiles": [],
+  "StreamedFiles": [
+   {
+    "Id": "467330099",
+    "Language": "SFX",
+    "ShortName": "Ambience_Forest.wav",
+    "Path": "SFX\\Ambience_Forest_C42B8C3C.wem"
+   }
+  ],
   "MediaFilesNotInAnyBank": [],
   "SoundBanks": [
    {
@@ -31,6 +38,14 @@
     "ShortName": "Main",
     "Path": "Main.bnk",
     "IncludedEvents": [
+     {
+      "Id": "1006024461",
+      "Name": "Amb_Forest",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Amb_Forest",
+      "GUID": "{3162FA40-A009-4A87-B187-6FDBBCB6E963}",
+      "MaxAttenuation": "100.000000",
+      "DurationType": "Infinite"
+     },
      {
       "Id": "814782759",
       "Name": "Amb_LFO_Sound",
@@ -57,6 +72,14 @@
       "DurationMax": "0.526236"
      },
      {
+      "Id": "481770683",
+      "Name": "SFX_Cat",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\SFX_Cat",
+      "GUID": "{66BBA989-C85B-4754-9B24-04CB8593F907}",
+      "MaxAttenuation": "100.000000",
+      "DurationType": "Infinite"
+     },
+     {
       "Id": "2540328137",
       "Name": "SFX_Fire",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\SFX_Fire",
@@ -70,6 +93,11 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Test",
       "GUID": "{EB72A4F4-25F0-4AD0-B6FA-CB5F7F442056}",
       "DurationType": "Infinite"
+     }
+    ],
+    "ReferencedStreamedFiles": [
+     {
+      "Id": "467330099"
      }
     ],
     "IncludedMemoryFiles": [
@@ -90,6 +118,12 @@
       "Language": "SFX",
       "ShortName": "Mus_Layer_2.wav",
       "Path": "SFX\\Mus_Layer_2_C42B8C3C.wem"
+     },
+     {
+      "Id": "316245871",
+      "Language": "SFX",
+      "ShortName": "Cat_03.wav",
+      "Path": "SFX\\Cat_03_66C02B12.wem"
      },
      {
       "Id": "368898759",
@@ -114,6 +148,12 @@
       "Language": "SFX",
       "ShortName": "Fire_Main.wav",
       "Path": "SFX\\Fire_Main_C42B8C3C.wem"
+     },
+     {
+      "Id": "823224000",
+      "Language": "SFX",
+      "ShortName": "Cat_01.wav",
+      "Path": "SFX\\Cat_01_66C02B12.wem"
      },
      {
       "Id": "1046207269",
