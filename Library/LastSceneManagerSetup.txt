@@ -1,9 +1,5 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Scenes/Test_Shader.unity
-=======
-- path: Assets/Scenes/SoundScene.unity
->>>>>>> master
   isLoaded: 1
   isActive: 1
   isSubScene: 0

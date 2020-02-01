@@ -11,7 +11,7 @@ public class Render : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        mat = new Material(Shader.Find("Shaders/ShaderTestDeux"));
+        mat = new Material(Shader.Find("Shaders/ShaderGrey"));
         //Debug.Log("Resolution "+Screen.currentResolution);
         mat.SetFloat("height", Screen.currentResolution.height);
         mat.SetFloat("width", Screen.currentResolution.width);
