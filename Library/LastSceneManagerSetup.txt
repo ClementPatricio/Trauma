@@ -2,7 +2,11 @@ sceneSetups:
 <<<<<<< HEAD
 - path: Assets/Scenes/Test_Shader.unity
 =======
+<<<<<<< HEAD
 - path: Assets/Scenes/SoundSceneIntegration.unity
+=======
+- path: Assets/Scenes/SoundScene.unity
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 >>>>>>> master
   isLoaded: 1
   isActive: 1

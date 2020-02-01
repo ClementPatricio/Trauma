@@ -15,6 +15,7 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 8
     y: 51
     width: 1904
@@ -31,9 +32,23 @@ MonoBehaviour:
   m_Title: 
   m_RootView: {fileID: 2}
 >>>>>>> master
+=======
+    x: 0
+    y: 43
+    width: 1920
+    height: 997
+  m_ShowMode: 4
+  m_Title: 
+<<<<<<< HEAD
+  m_RootView: {fileID: 2}
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_MinSize: {x: 875, y: 542}
+=======
+  m_RootView: {fileID: 3}
+  m_MinSize: {x: 875, y: 300}
+>>>>>>> master
   m_MaxSize: {x: 10000, y: 10000}
-  m_Maximized: 0
+  m_Maximized: 1
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -43,23 +58,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_EditorHideFlags: 1
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GameView
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 9}
-  - {fileID: 3}
+  m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 0
-    y: 30
-    width: 1904
-    height: 931
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
-  vertical: 0
-  controlID: 123
+    x: 1115
+    y: 0
+    width: 335
+    height: 573
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 17}
+  m_Panes:
+  - {fileID: 17}
+  m_Selected: 0
+  m_LastSelected: 0
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -71,9 +93,10 @@ MonoBehaviour:
 =======
 >>>>>>> master
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_Children: []
 =======
@@ -82,10 +105,17 @@ MonoBehaviour:
   - {fileID: 5}
   - {fileID: 4}
 >>>>>>> master
+=======
+  m_Children:
+  - {fileID: 4}
+  - {fileID: 6}
+  - {fileID: 5}
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_Position:
     serializedVersion: 2
-    x: 1518
+    x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 386
     height: 931
@@ -96,6 +126,12 @@ MonoBehaviour:
   - {fileID: 14}
   m_Selected: 0
   m_LastSelected: 0
+=======
+    width: 1920
+    height: 997
+  m_MinSize: {x: 875, y: 300}
+  m_MaxSize: {x: 10000, y: 10000}
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 --- !u!114 &4
 =======
     width: 1536
@@ -112,7 +148,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
@@ -120,6 +156,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 376
     height: 563
@@ -130,6 +167,13 @@ MonoBehaviour:
   - {fileID: 15}
   m_Selected: 0
   m_LastSelected: 0
+=======
+    width: 1920
+    height: 30
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+  m_LastLoadedLayoutName: 
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 --- !u!114 &5
 =======
     width: 1536
@@ -147,13 +191,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     y: 563
     width: 1518
@@ -166,6 +211,13 @@ MonoBehaviour:
   - {fileID: 18}
   m_Selected: 0
   m_LastSelected: 1
+=======
+    y: 977
+    width: 1920
+    height: 20
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 --- !u!114 &6
 =======
     y: 761
@@ -183,23 +235,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
 <<<<<<< HEAD
   - {fileID: 7}
-  - {fileID: 2}
-  - {fileID: 8}
+  - {fileID: 14}
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 1904
-    height: 981
-  m_MinSize: {x: 875, y: 300}
-  m_MaxSize: {x: 10000, y: 10000}
+    y: 30
+    width: 1920
+    height: 947
+<<<<<<< HEAD
+  m_MinSize: {x: 679, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
+  vertical: 0
+  controlID: 92
+--- !u!114 &6
+=======
+  m_MinSize: {x: 881, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
+  vertical: 0
+  controlID: 57
 --- !u!114 &7
+<<<<<<< HEAD
 =======
   - {fileID: 6}
   - {fileID: 13}
@@ -214,6 +275,8 @@ MonoBehaviour:
   vertical: 0
   controlID: 38
 --- !u!114 &6
+=======
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 >>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,9 +286,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12011, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_Children: []
 =======
@@ -233,10 +297,16 @@ MonoBehaviour:
   - {fileID: 7}
   - {fileID: 10}
 >>>>>>> master
+=======
+  m_Children:
+  - {fileID: 8}
+  - {fileID: 11}
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 1904
     height: 30
@@ -252,6 +322,22 @@ MonoBehaviour:
   vertical: 1
   controlID: 39
 --- !u!114 &7
+=======
+    width: 1450
+    height: 947
+<<<<<<< HEAD
+  m_MinSize: {x: 403, y: 492}
+  m_MaxSize: {x: 14003, y: 14042}
+  vertical: 1
+  controlID: 93
+--- !u!114 &7
+=======
+  m_MinSize: {x: 605, y: 492}
+  m_MaxSize: {x: 14003, y: 14042}
+  vertical: 1
+  controlID: 58
+--- !u!114 &8
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 >>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -261,20 +347,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12042, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Children: []
+=======
+  m_Children:
+  - {fileID: 9}
+  - {fileID: 10}
+  - {fileID: 2}
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 961
-    width: 1904
-    height: 20
-  m_MinSize: {x: 0, y: 0}
-  m_MaxSize: {x: 0, y: 0}
+    y: 0
+    width: 1450
+    height: 573
+<<<<<<< HEAD
+  m_MinSize: {x: 403, y: 221}
+  m_MaxSize: {x: 8003, y: 4021}
+  vertical: 0
+  controlID: 94
+--- !u!114 &8
+=======
+  m_MinSize: {x: 605, y: 221}
+  m_MaxSize: {x: 12005, y: 4021}
+  vertical: 0
+  controlID: 59
 --- !u!114 &9
+<<<<<<< HEAD
 =======
   m_Children:
   - {fileID: 8}
@@ -290,6 +393,8 @@ MonoBehaviour:
   vertical: 0
   controlID: 40
 --- !u!114 &8
+=======
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 >>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -299,16 +404,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 10}
-  - {fileID: 5}
+  m_Children: []
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
     width: 1518
     height: 931
@@ -316,6 +420,21 @@ MonoBehaviour:
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
   controlID: 81
+=======
+    width: 444
+    height: 573
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+<<<<<<< HEAD
+  m_ActualView: {fileID: 17}
+=======
+  m_ActualView: {fileID: 18}
+>>>>>>> master
+  m_Panes:
+  - {fileID: 18}
+  m_Selected: 0
+  m_LastSelected: 0
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 --- !u!114 &10
 =======
     width: 355
@@ -338,13 +457,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: SceneView
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 355
     y: 0
     width: 805
@@ -359,6 +482,27 @@ MonoBehaviour:
   m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &10
+=======
+    x: 444
+    y: 0
+    width: 671
+    height: 573
+<<<<<<< HEAD
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 18}
+=======
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 19}
+>>>>>>> master
+  m_Panes:
+  - {fileID: 19}
+  - {fileID: 20}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &11
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -367,26 +511,36 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
+<<<<<<< HEAD
 >>>>>>> master
+=======
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 4}
   - {fileID: 11}
+=======
+  - {fileID: 12}
+  - {fileID: 13}
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 0
-    width: 1518
-    height: 563
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+    y: 573
+    width: 1450
+    height: 374
+  m_MinSize: {x: 333, y: 271}
+  m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 55
+<<<<<<< HEAD
+  controlID: 57
 --- !u!114 &11
 =======
+<<<<<<< HEAD
   - {fileID: 11}
   - {fileID: 12}
   m_Position:
@@ -400,6 +554,11 @@ MonoBehaviour:
   vertical: 0
   controlID: 92
 --- !u!114 &11
+=======
+  controlID: 140
+--- !u!114 &12
+>>>>>>> master
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -416,6 +575,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 342
     height: 289
   m_MinSize: {x: 231, y: 271}
@@ -427,6 +587,18 @@ MonoBehaviour:
   m_LastSelected: 0
 --- !u!114 &12
 >>>>>>> master
+=======
+    width: 739
+    height: 374
+  m_MinSize: {x: 231, y: 271}
+  m_MaxSize: {x: 10001, y: 10021}
+  m_ActualView: {fileID: 22}
+  m_Panes:
+  - {fileID: 22}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &13
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -437,27 +609,37 @@ MonoBehaviour:
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Name: SceneView
 =======
   m_Name: AkWwisePicker
 >>>>>>> master
+=======
+  m_Name: ConsoleWindow
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 376
+=======
+    x: 739
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
     y: 0
-    width: 1142
-    height: 563
-  m_MinSize: {x: 202, y: 221}
+    width: 711
+    height: 374
+  m_MinSize: {x: 102, y: 121}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 16}
+  m_ActualView: {fileID: 23}
   m_Panes:
+  - {fileID: 23}
+  - {fileID: 21}
   - {fileID: 16}
-  - {fileID: 17}
-  - {fileID: 12}
+  - {fileID: 15}
   m_Selected: 0
+<<<<<<< HEAD
   m_LastSelected: 1
 --- !u!114 &12
 =======
@@ -477,6 +659,10 @@ MonoBehaviour:
   m_LastSelected: 0
 --- !u!114 &13
 >>>>>>> master
+=======
+  m_LastSelected: 2
+--- !u!114 &14
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -485,6 +671,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
 =======
@@ -516,17 +703,46 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c3b8cbe4f7b3d24884dd97641ecc7c1, type: 3}
 >>>>>>> master
+=======
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 400, y: 100}
-  m_MaxSize: {x: 2048, y: 2048}
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1450
+    y: 0
+    width: 470
+    height: 947
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 24}
+  m_Panes:
+  - {fileID: 24}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c3b8cbe4f7b3d24884dd97641ecc7c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Asset Store
-    m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
-      type: 0}
+    m_Text: Wwise Picker
+    m_Image: {fileID: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 468
     y: 181
@@ -542,6 +758,14 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &15
 >>>>>>> master
+=======
+    x: 427
+    y: 646
+    width: 1021
+    height: 353
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &16
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -549,13 +773,14 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_Text: Project
     m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000,
@@ -563,10 +788,15 @@ MonoBehaviour:
     m_Text: Animation
     m_Image: {fileID: -8967370667835289719, guid: 0000000000000000d000000000000000,
 >>>>>>> master
+=======
+    m_Text: Animation
+    m_Image: {fileID: 1561878555887300916, guid: 0000000000000000d000000000000000,
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 8
     y: 644
@@ -578,29 +808,16 @@ MonoBehaviour:
     width: 816
     height: 268
 >>>>>>> master
+=======
+    x: 427
+    y: 646
+    width: 1021
+    height: 353
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_ViewDataDictionary: {fileID: 0}
-  m_SearchFilter:
-    m_NameFilter: 
-    m_ClassNames: []
-    m_AssetLabels: []
-    m_AssetBundleNames: []
-    m_VersionControlStates: []
-    m_SoftLockControlStates: []
-    m_ReferencingInstanceIDs: 
-    m_SceneHandles: 
-    m_ShowAllHits: 0
-    m_SkipHidden: 0
-    m_SearchArea: 1
-    m_Folders:
-    - Assets/Scripts
-  m_ViewMode: 1
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets/Scripts
-  m_LastFoldersGridSize: -1
-  m_LastProjectPath: G:\Unity_projets\Trauma
   m_LockTracker:
     m_IsLocked: 0
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
@@ -694,6 +911,13 @@ MonoBehaviour:
 =======
   m_LastSelectedObjectID: -2822
 --- !u!114 &16
+=======
+  m_LastSelectedObjectID: -9290
+--- !u!114 &16
+=======
+  m_LastSelectedObjectID: -2822
+--- !u!114 &17
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 >>>>>>> master
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -703,12 +927,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 275, y: 50}
+  m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_Text: Inspector
     m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
@@ -716,10 +941,15 @@ MonoBehaviour:
     m_Text: Game
     m_Image: {fileID: 257045534191678443, guid: 0000000000000000d000000000000000,
 >>>>>>> master
+=======
+    m_Text: Game
+    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< HEAD
     x: 1526
     y: 81
@@ -745,13 +975,24 @@ MonoBehaviour:
     width: 803
     height: 421
   m_ViewDataDictionary: {fileID: 0}
+=======
+    x: 1115
+    y: 73
+    width: 333
+    height: 552
+  m_ViewDataDictionary: {fileID: 0}
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_SerializedViewsNames: []
   m_SerializedViewsValues: []
   m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+<<<<<<< HEAD
   m_TargetSize: {x: 711, y: 400}
+=======
+  m_TargetSize: {x: 333, y: 187}
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -765,10 +1006,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< HEAD
     m_HBaseRangeMin: -284.4
     m_HBaseRangeMax: 284.4
     m_VBaseRangeMin: -160
     m_VBaseRangeMax: 160
+=======
+    m_HBaseRangeMin: -166.5
+    m_HBaseRangeMax: 166.5
+    m_VBaseRangeMin: -93.5
+    m_VBaseRangeMax: 93.5
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -777,7 +1025,11 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
+<<<<<<< HEAD
     m_EnableMouseInput: 0
+=======
+    m_EnableMouseInput: 1
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -786,16 +1038,24 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
+<<<<<<< HEAD
       width: 803
       height: 400
     m_Scale: {x: 1, y: 1}
     m_Translation: {x: 401.5, y: 200}
+=======
+      width: 333
+      height: 531
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 166.5, y: 265.5}
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< HEAD
       x: -401.5
       y: -200
       width: 803
@@ -803,13 +1063,26 @@ MonoBehaviour:
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1003.75, y: 526.25}
+=======
+      x: -166.5
+      y: -265.5
+      width: 333
+      height: 531
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 333, y: 552}
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
+<<<<<<< HEAD
 --- !u!114 &17
 >>>>>>> master
+=======
+--- !u!114 &18
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -831,16 +1104,29 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 8
     y: 81
     width: 375
     height: 542
+=======
+    x: 0
+    y: 73
+    width: 443
+    height: 552
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 06310000
+<<<<<<< HEAD
+      m_SelectedIDs: b6dbffff
+      m_LastClickedID: -9290
+      m_ExpandedIDs: 06dcffff42fbffff
+=======
+      m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< HEAD
       m_ExpandedIDs: 30f6ffff18f9ffffc03f0000
 =======
     x: 0
@@ -854,6 +1140,9 @@ MonoBehaviour:
       m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: c6d7fffff2d7ffff0cd8ffff38d8ffff64d8ffff88d8ffffeedcffffdae2ffff0ae3ffff1ae3ffff38e3ffff68e3fffface6ffffc6e6ffff92ecffffd0ecffff22edffffa2f7ffff7ef8ffffa8f8ffffbef8fffffaf8ffffacf9ffffecb000001eb2000050b30000
+=======
+      m_ExpandedIDs: fcf4ffff2cf5ffffd6f6ffff
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 >>>>>>> master
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -871,10 +1160,14 @@ MonoBehaviour:
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
         m_ClientGUIView: {fileID: 0}
 =======
         m_ClientGUIView: {fileID: 8}
 >>>>>>> master
+=======
+        m_ClientGUIView: {fileID: 9}
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -882,12 +1175,17 @@ MonoBehaviour:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_WindowGUID: 6ec19632202188643bb8afcc7da9447e
 --- !u!114 &16
 =======
   m_WindowGUID: 472b747e7a0688d49b736db766698286
 --- !u!114 &18
 >>>>>>> master
+=======
+  m_WindowGUID: 472b747e7a0688d49b736db766698286
+--- !u!114 &19
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -909,6 +1207,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 384
     y: 81
     width: 1140
@@ -919,10 +1218,16 @@ MonoBehaviour:
     width: 803
     height: 421
 >>>>>>> master
+=======
+    x: 444
+    y: 73
+    width: 669
+    height: 552
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_ViewDataDictionary: {fileID: 0}
   m_ShowContextualTools: 0
-  m_WindowGUID: 67dc5afeed1359d478010aaecce4a30d
-  m_Gizmos: 1
+  m_WindowGUID: bd87b6932be894e4b875b23472545726
+  m_Gizmos: 0
   m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 0
@@ -935,9 +1240,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 1, z: -10}
 =======
+<<<<<<< HEAD
     m_Target: {x: 214.21523, y: -51.098885, z: -446.91977}
     speed: 2
     m_Value: {x: 214.21523, y: -51.098885, z: -446.91977}
+=======
+    m_Target: {x: -1.0494322, y: -2.2282982, z: 12.164801}
+    speed: 2
+    m_Value: {x: -1.0494322, y: -2.2282982, z: 12.164801}
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 >>>>>>> master
   m_RenderMode: 0
   m_CameraMode:
@@ -950,7 +1261,7 @@ MonoBehaviour:
   m_ExposureSliderMax: 10
   m_SceneViewState:
     showFog: 1
-    showMaterialUpdate: 0
+    showMaterialUpdate: 1
     showSkybox: 1
     showFlares: 1
     showImageEffects: 1
@@ -985,14 +1296,20 @@ MonoBehaviour:
     m_gridOpacity: 0.5
   m_Rotation:
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+=======
+    m_Target: {x: -0.34247085, y: 0.03578077, z: -0.013053501, w: -0.938759}
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
     speed: 2
-    m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+    m_Value: {x: -0.3424699, y: 0.035780672, z: -0.013053466, w: -0.93875647}
   m_Size:
+<<<<<<< HEAD
     m_Target: 22
     speed: 2
     m_Value: 22
 =======
+<<<<<<< HEAD
     m_Target: {x: 0.009999065, y: 0.97685915, z: -0.046938322, w: 0.20853291}
     speed: 2
     m_Value: {x: 0.0099988505, y: 0.9768382, z: -0.046937317, w: 0.20852844}
@@ -1000,6 +1317,11 @@ MonoBehaviour:
     m_Target: 540.94525
     speed: 2
     m_Value: 540.94525
+=======
+    m_Target: 13.526551
+    speed: 2
+    m_Value: 13.526551
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 >>>>>>> master
   m_Ortho:
     m_Target: 0
@@ -1018,7 +1340,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -1026,10 +1348,14 @@ MonoBehaviour:
   m_LastLockedObject: {fileID: 0}
   m_ViewIsLockedToObject: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!114 &17
 =======
 --- !u!114 &19
 >>>>>>> master
+=======
+--- !u!114 &20
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1038,6 +1364,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
 =======
@@ -1069,21 +1396,56 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
 >>>>>>> master
+=======
+  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 200, y: 200}
+  m_MinSize: {x: 400, y: 100}
+  m_MaxSize: {x: 2048, y: 2048}
+  m_TitleContent:
+    m_Text: Asset Store
+    m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 332.80002
+    y: 73.6
+    width: 754
+    height: 421
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &21
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
+<<<<<<< HEAD
 <<<<<<< HEAD
     m_Text: Game
     m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
 =======
     m_Text: Animator
     m_Image: {fileID: -6973158847631862895, guid: 0000000000000000d000000000000000,
+=======
+    m_Text: Animator
+    m_Image: {fileID: 663490763026382308, guid: 0000000000000000d000000000000000,
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 342.4
     y: 515.2
     width: 816
@@ -1224,6 +1586,76 @@ MonoBehaviour:
     y: 515.2
     width: 341
     height: 268
+=======
+    x: 427
+    y: 646
+    width: 1021
+    height: 353
+  m_ViewDataDictionary: {fileID: 0}
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: -8077511461365314633, guid: 4e56aa198aa578f4a890fa8876cd9c60, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 9100000, guid: 4e56aa198aa578f4a890fa8876cd9c60,
+    type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: -8077511461365314633, guid: 4e56aa198aa578f4a890fa8876cd9c60,
+      type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  stateMachineGraph: {fileID: 0}
+  stateMachineGraphGUI: {fileID: 0}
+  blendTreeGraph: {fileID: 0}
+  blendTreeGraphGUI: {fileID: 0}
+  m_AutoLiveLink: 1
+  m_MiniTool: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_CurrentEditor: 1
+  m_LayerEditor:
+    m_SelectedLayerIndex: 0
+--- !u!114 &22
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_TitleContent:
+    m_Text: Project
+    m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 646
+    width: 738
+    height: 353
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1237,19 +1669,47 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
+<<<<<<< HEAD
     m_Folders: []
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\Trauma
+=======
+<<<<<<< HEAD
+    m_Folders:
+    - Assets/Scripts
+  m_ViewMode: 1
+=======
+    m_Folders: []
+  m_ViewMode: 0
+>>>>>>> master
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/Scripts
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: G:\Unity_projets\Trauma
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: 603a0000
     m_LastClickedID: 14944
     m_ExpandedIDs: 000000000a3b00000c3b00000e3b0000103b0000123b0000
+=======
+<<<<<<< HEAD
+    m_SelectedIDs: 203c0000
+    m_LastClickedID: 15392
+    m_ExpandedIDs: 000000001c3c00001e3c0000203c0000223c0000243c000000ca9a3b
+=======
+    m_SelectedIDs: 603a0000
+    m_LastClickedID: 14944
+    m_ExpandedIDs: 00000000183e00001a3e00001c3e00001e3e0000203e0000
+>>>>>>> master
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1274,6 +1734,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
+<<<<<<< HEAD
     scrollPos: {x: 0, y: 60}
     m_SelectedIDs: 
     m_LastClickedID: 0
@@ -1282,18 +1743,46 @@ MonoBehaviour:
       m_UserAcceptedRename: 0
       m_Name: SoundScene
       m_OriginalName: SoundScene
+=======
+    scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
+    m_SelectedIDs: 603a0000
+    m_LastClickedID: 14944
+    m_ExpandedIDs: 000000001c3c00001e3c0000203c0000223c0000243c0000
+=======
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: ffffffff00000000183e00001a3e00001c3e00001e3e0000203e0000
+>>>>>>> master
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: HapticSonar
+      m_OriginalName: HapticSonar
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
+<<<<<<< HEAD
       m_UserData: 15150
+=======
+      m_UserData: 16326
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
       m_OriginalEventType: 0
       m_IsRenamingFilename: 1
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 11}
+=======
+<<<<<<< HEAD
+      m_ClientGUIView: {fileID: 11}
+=======
+      m_ClientGUIView: {fileID: 12}
+>>>>>>> master
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
     m_SearchString: 
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
@@ -1304,7 +1793,11 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
+<<<<<<< HEAD
     m_HadKeyboardFocusLastEvent: 0
+=======
+    m_HadKeyboardFocusLastEvent: 1
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1321,7 +1814,11 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
+<<<<<<< HEAD
       m_ClientGUIView: {fileID: 0}
+=======
+      m_ClientGUIView: {fileID: 11}
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -1333,8 +1830,12 @@ MonoBehaviour:
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 201
+<<<<<<< HEAD
 --- !u!114 &22
 >>>>>>> master
+=======
+--- !u!114 &23
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1356,6 +1857,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
 <<<<<<< HEAD
+<<<<<<< HEAD
     x: 8
     y: 644
     width: 1517
@@ -1367,6 +1869,14 @@ MonoBehaviour:
     height: 268
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &23
+=======
+    x: 739
+    y: 646
+    width: 709
+    height: 353
+  m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &24
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1382,14 +1892,37 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Inspector
+<<<<<<< HEAD
     m_Image: {fileID: 8356117983803934776, guid: 0000000000000000d000000000000000,
+=======
+    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
       type: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< HEAD
     x: 1160
     y: 73.6
     width: 375
     height: 710
 >>>>>>> master
+=======
+    x: 1450
+    y: 73
+    width: 469
+    height: 926
+>>>>>>> parent of 1f32ff4... ShaderGrey debut
   m_ViewDataDictionary: {fileID: 0}
+  m_OpenAddComponentMenu: 0
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewResizer:
+    m_CachedPref: 160
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_PreviewWindow: {fileID: 0}
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
