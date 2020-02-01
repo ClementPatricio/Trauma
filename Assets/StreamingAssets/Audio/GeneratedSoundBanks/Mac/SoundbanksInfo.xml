@@ -24,13 +24,13 @@
 				<Event Id="814782759" Name="Amb_LFO_Sound" ObjectPath="\Events\Default Work Unit\Ambience\Amb_LFO_Sound" GUID="{6AA964B0-8660-4028-9AC6-5523240515D4}" MaxAttenuation="30.000000" DurationType="Infinite"/>
 				<Event Id="3645673277" Name="Music_MusicBox" ObjectPath="\Events\Default Work Unit\Music\Music_MusicBox" GUID="{FD34EA23-7298-4CF3-89D2-EABF8C0B7186}" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="3456893342" Name="Music_Stop_Mechanic" ObjectPath="\Events\Default Work Unit\Music\Music_Stop_Mechanic" GUID="{5BBDDA35-ABD5-4A52-9B77-8CC43734B8E7}" DurationType="OneShot" DurationMin="0.526236" DurationMax="0.526236"/>
-				<Event Id="2540328137" Name="SFX_Fire" ObjectPath="\Events\Default Work Unit\SFX\SFX_Fire" GUID="{ED31354C-9C83-48E4-AA78-35F92432894C}" DurationType="Infinite"/>
+				<Event Id="2540328137" Name="SFX_Fire" ObjectPath="\Events\Default Work Unit\SFX\SFX_Fire" GUID="{ED31354C-9C83-48E4-AA78-35F92432894C}" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="3157003241" Name="Test" ObjectPath="\Events\Default Work Unit\Test" GUID="{EB72A4F4-25F0-4AD0-B6FA-CB5F7F442056}" DurationType="Infinite"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
 				<File Id="83078971" Language="SFX">
 					<ShortName>Mus_Stop.wav</ShortName>
-					<Path>SFX\Mus_Stop_337E08F4.wem</Path>
+					<Path>SFX\Mus_Stop_607D541F.wem</Path>
 				</File>
 				<File Id="112297882" Language="SFX">
 					<ShortName>Lfo_Sound.wav</ShortName>

@@ -24,8 +24,19 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: fbb344400ce76745a4902bb77c0a4878
     GuidInternal: 
-    m_lastTime: -8586211055717466227
-    List: []
+    m_lastTime: -8586210225586733866
+    List:
+    - name: Verb_House
+      guid: f0fca7d732902a4ea6475e7416f276b4
+      id: 3320776415
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Verb_House
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\Verb_House
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -47,7 +58,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 9369fccadc0a7941ae6453e5255d7b08
     GuidInternal: 
-    m_lastTime: -8586210338618633516
+    m_lastTime: -8586210284965288183
     List:
     - name: Amb_LFO_Sound
       guid: b064a96a608628409ac65523240515d4
@@ -74,6 +85,20 @@ MonoBehaviour:
       - ElementName: Music_MusicBox
         ObjectType: 3
       Path: Default Work Unit\Music\Music_MusicBox
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_Stop_Mechanic
+      guid: 35dabd5bd5ab524a9b778cc43734b8e7
+      id: 3456893342
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Music_Stop_Mechanic
+        ObjectType: 3
+      Path: Default Work Unit\Music\Music_Stop_Mechanic
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -108,7 +133,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: bb2354551fc1c243af8701e1410650aa
     GuidInternal: 
-    m_lastTime: -8586210338162541042
+    m_lastTime: -8586210215993498235
     List:
     - name: RTPC_Distance_FirePlace
       guid: 2ac7573408cea94baa8a2d7b50fd3419
@@ -140,7 +165,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: dc9af4601110ac4b90ba89e47bc02a15
     GuidInternal: 
-    m_lastTime: -8586210336487552975
+    m_lastTime: -8586210310073953471
     List:
     - name: SW_MusicBox
       guid: 99a6dadcd8628b4fba462212cfae0020
@@ -170,6 +195,12 @@ MonoBehaviour:
         PathAndIcons:
         - ElementName: Intensity_03
           ObjectType: 10
+      - name: MusicBox_End
+        guid: 5b1c64d5d86bbf4ca5894297f5eb3644
+        id: 29631719
+        PathAndIcons:
+        - ElementName: MusicBox_End
+          ObjectType: 10
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -182,9 +213,8 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Global_Gamejam_2020
-  - /Global_Gamejam_2020/Events
-  - /Global_Gamejam_2020/Events/Default Work Unit
-  - /Global_Gamejam_2020/Events/Default Work Unit/Ambience
-  - /Global_Gamejam_2020/Events/Default Work Unit/Music
+  - /Global_Gamejam_2020/Auxiliary Busses
+  - /Global_Gamejam_2020/Auxiliary Busses/Default Work Unit
+  - /Global_Gamejam_2020/Auxiliary Busses/Default Work Unit/Master Audio Bus
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

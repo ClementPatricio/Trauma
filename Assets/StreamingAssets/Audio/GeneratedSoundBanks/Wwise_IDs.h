@@ -59,6 +59,11 @@ namespace AK
         static const AkUniqueID VO = 1534528548U;
     } // namespace BUSSES
 
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID VERB_HOUSE = 3320776415U;
+    } // namespace AUX_BUSSES
+
     namespace AUDIO_DEVICES
     {
         static const AkUniqueID NO_OUTPUT = 2317455096U;

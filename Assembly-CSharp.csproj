@@ -65,6 +65,7 @@
     <Compile Include="Assets\Scripts\GamepadVibrate.cs" />
     <Compile Include="Assets\Scripts\HapticSonar.cs" />
     <Compile Include="Assets\Scripts\InputSystem\InputActions.cs" />
+    <Compile Include="Assets\Scripts\Move.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\AKRESULT.cs" />
     <Compile Include="Assets\Wwise\Deployment\API\Generated\Common\Ak3DPositionType.cs" />
