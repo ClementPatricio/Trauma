@@ -1,0 +1,105 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "11",
+  "SoundbankVersion": "134",
+  "RootPaths": {
+   "ProjectRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\WwiseProjects\\WwiseGlobalGameJam20.git\\trunk\\",
+   "SourceFilesRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\WwiseProjects\\WwiseGlobalGameJam20.git\\trunk\\.cache\\Windows\\",
+   "SoundBanksRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\WwiseProjects\\Trauma\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\WwiseProjects\\WwiseGlobalGameJam20.git\\trunk\\GeneratedSoundBanks\\Windows"
+  },
+  "DialogueEvents": [],
+  "StreamedFiles": [
+   {
+    "Id": "45142525",
+    "Language": "SFX",
+    "ShortName": "Music_Vinyl.wav",
+    "Path": "SFX\\Music_Vinyl_C42B8C3C.wem"
+   }
+  ],
+  "MediaFilesNotInAnyBank": [],
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk"
+   },
+   {
+    "Id": "3161908922",
+    "GUID": "{1499E15A-9A40-4200-957A-7F28F690FE66}",
+    "Language": "SFX",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "Main.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "814782759",
+      "Name": "Amb_LFO_Sound",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Amb_LFO_Sound",
+      "GUID": "{6AA964B0-8660-4028-9AC6-5523240515D4}",
+      "MaxAttenuation": "30.000000",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "1941451335",
+      "Name": "Music_Vinyl",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Music_Vinyl",
+      "GUID": "{FD34EA23-7298-4CF3-89D2-EABF8C0B7186}",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "2540328137",
+      "Name": "SFX_Fire",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\SFX_Fire",
+      "GUID": "{ED31354C-9C83-48E4-AA78-35F92432894C}",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "3157003241",
+      "Name": "Test",
+      "ObjectPath": "\\Events\\Default Work Unit\\Test",
+      "GUID": "{EB72A4F4-25F0-4AD0-B6FA-CB5F7F442056}",
+      "DurationType": "Infinite"
+     }
+    ],
+    "ReferencedStreamedFiles": [
+     {
+      "Id": "45142525"
+     }
+    ],
+    "IncludedMemoryFiles": [
+     {
+      "Id": "112297882",
+      "Language": "SFX",
+      "ShortName": "Lfo_Sound.wav",
+      "Path": "SFX\\Lfo_Sound_09C5B4C0.wem"
+     },
+     {
+      "Id": "604695064",
+      "Language": "SFX",
+      "ShortName": "Fire_Spark.wav",
+      "Path": "SFX\\Fire_Spark_C42B8C3C.wem"
+     },
+     {
+      "Id": "617567950",
+      "Language": "SFX",
+      "ShortName": "Fire_Main.wav",
+      "Path": "SFX\\Fire_Main_C42B8C3C.wem"
+     },
+     {
+      "Id": "1046207269",
+      "Language": "SFX",
+      "ShortName": "PM_BB_DI_1_115BPM_Dmin_C.wav",
+      "Path": "SFX\\PM_BB_DI_1_115BPM_Dmin_C_C42B8C3C.wem"
+     }
+    ]
+   }
+  ]
+ }
+}
