@@ -65,12 +65,15 @@
     <Compile Include="Assets\Scripts\GamepadVibrate.cs" />
     <Compile Include="Assets\Scripts\HapticSonar.cs" />
     <Compile Include="Assets\Scripts\InputSystem\InputActions.cs" />
+<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Manager\ControlerManager.cs" />
     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
     <Compile Include="Assets\Scripts\Manager\LevelManager.cs" />
     <Compile Include="Assets\Scripts\Manager\Manager.cs" />
     <Compile Include="Assets\Scripts\Manager\SoundManager.cs" />
     <Compile Include="Assets\Scripts\Manager\UIManager.cs" />
+=======
+>>>>>>> master
     <Compile Include="Assets\Scripts\Move.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Render.cs" />

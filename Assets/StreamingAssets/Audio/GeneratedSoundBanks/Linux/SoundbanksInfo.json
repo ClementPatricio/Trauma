@@ -61,6 +61,7 @@
       "Name": "SFX_Fire",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\SFX_Fire",
       "GUID": "{ED31354C-9C83-48E4-AA78-35F92432894C}",
+      "MaxAttenuation": "100.000000",
       "DurationType": "Infinite"
      },
      {
@@ -76,7 +77,7 @@
       "Id": "83078971",
       "Language": "SFX",
       "ShortName": "Mus_Stop.wav",
-      "Path": "SFX\\Mus_Stop_337E08F4.wem"
+      "Path": "SFX\\Mus_Stop_607D541F.wem"
      },
      {
       "Id": "112297882",
