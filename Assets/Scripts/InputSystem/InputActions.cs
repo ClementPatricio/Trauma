@@ -25,6 +25,22 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Move"",
+                    ""type"": ""Button"",
+                    ""id"": ""b3e99992-0c63-4c46-aff7-3e447cf3346f"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""LookAround"",
+                    ""type"": ""Button"",
+                    ""id"": ""9a985f35-83df-431c-90e7-7b8e6992f1c9"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -41,12 +57,23 @@ public class @InputActions : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""aa523da0-2820-43ea-a7b9-85336293e259"",
-                    ""path"": ""<Keyboard>/d"",
+                    ""id"": ""63b12f25-cc48-43b8-991b-89ae684be8c2"",
+                    ""path"": ""<Gamepad>/leftStick"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Interact"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""6fd75e6c-ee85-402b-8949-5a17e3bd2dc7"",
+                    ""path"": ""<Gamepad>/rightStick"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""LookAround"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -70,6 +97,8 @@ public class @InputActions : IInputActionCollection, IDisposable
         // Movements
         m_Movements = asset.FindActionMap("Movements", throwIfNotFound: true);
         m_Movements_Interact = m_Movements.FindAction("Interact", throwIfNotFound: true);
+        m_Movements_Move = m_Movements.FindAction("Move", throwIfNotFound: true);
+        m_Movements_LookAround = m_Movements.FindAction("LookAround", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -120,11 +149,15 @@ public class @InputActions : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Movements;
     private IMovementsActions m_MovementsActionsCallbackInterface;
     private readonly InputAction m_Movements_Interact;
+    private readonly InputAction m_Movements_Move;
+    private readonly InputAction m_Movements_LookAround;
     public struct MovementsActions
     {
         private @InputActions m_Wrapper;
         public MovementsActions(@InputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Interact => m_Wrapper.m_Movements_Interact;
+        public InputAction @Move => m_Wrapper.m_Movements_Move;
+        public InputAction @LookAround => m_Wrapper.m_Movements_LookAround;
         public InputActionMap Get() { return m_Wrapper.m_Movements; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -137,6 +170,12 @@ public class @InputActions : IInputActionCollection, IDisposable
                 @Interact.started -= m_Wrapper.m_MovementsActionsCallbackInterface.OnInteract;
                 @Interact.performed -= m_Wrapper.m_MovementsActionsCallbackInterface.OnInteract;
                 @Interact.canceled -= m_Wrapper.m_MovementsActionsCallbackInterface.OnInteract;
+                @Move.started -= m_Wrapper.m_MovementsActionsCallbackInterface.OnMove;
+                @Move.performed -= m_Wrapper.m_MovementsActionsCallbackInterface.OnMove;
+                @Move.canceled -= m_Wrapper.m_MovementsActionsCallbackInterface.OnMove;
+                @LookAround.started -= m_Wrapper.m_MovementsActionsCallbackInterface.OnLookAround;
+                @LookAround.performed -= m_Wrapper.m_MovementsActionsCallbackInterface.OnLookAround;
+                @LookAround.canceled -= m_Wrapper.m_MovementsActionsCallbackInterface.OnLookAround;
             }
             m_Wrapper.m_MovementsActionsCallbackInterface = instance;
             if (instance != null)
@@ -144,6 +183,12 @@ public class @InputActions : IInputActionCollection, IDisposable
                 @Interact.started += instance.OnInteract;
                 @Interact.performed += instance.OnInteract;
                 @Interact.canceled += instance.OnInteract;
+                @Move.started += instance.OnMove;
+                @Move.performed += instance.OnMove;
+                @Move.canceled += instance.OnMove;
+                @LookAround.started += instance.OnLookAround;
+                @LookAround.performed += instance.OnLookAround;
+                @LookAround.canceled += instance.OnLookAround;
             }
         }
     }
@@ -160,5 +205,7 @@ public class @InputActions : IInputActionCollection, IDisposable
     public interface IMovementsActions
     {
         void OnInteract(InputAction.CallbackContext context);
+        void OnMove(InputAction.CallbackContext context);
+        void OnLookAround(InputAction.CallbackContext context);
     }
 }

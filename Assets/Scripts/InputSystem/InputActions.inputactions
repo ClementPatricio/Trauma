@@ -12,6 +12,22 @@
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Move",
+                    "type": "Button",
+                    "id": "b3e99992-0c63-4c46-aff7-3e447cf3346f",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LookAround",
+                    "type": "Button",
+                    "id": "9a985f35-83df-431c-90e7-7b8e6992f1c9",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -28,12 +44,23 @@
                 },
                 {
                     "name": "",
-                    "id": "aa523da0-2820-43ea-a7b9-85336293e259",
-                    "path": "<Keyboard>/d",
+                    "id": "63b12f25-cc48-43b8-991b-89ae684be8c2",
+                    "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Interact",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6fd75e6c-ee85-402b-8949-5a17e3bd2dc7",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LookAround",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
