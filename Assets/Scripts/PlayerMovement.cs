@@ -25,33 +25,34 @@ public class PlayerMovement : MonoBehaviour
         inputActions = new InputActions();
     }
 
-    public void VibrateRight()
+    public void VibrateRight(float intensity, float timeout)
     {
-        gpVibrate.Vibrate(1.0f, 0.0f, 1.0f);
-        Invoke(nameof(VibrateLeft), 2.0f);
+        gpVibrate.Vibrate(intensity, 0.0f, timeout);
     }
-    public void VibrateLeft()
+    public void VibrateLeft(float intensity, float timeout)
     {
-        gpVibrate.Vibrate(0.0f, 1.0f, 1.0f);
-        Invoke(nameof(VibrateRight), 2.0f);
+        gpVibrate.Vibrate(0.0f, intensity, timeout);
+    }
+
+    public void Vibrate(float leftIntensity, float rightIntensity, float timeout)
+    {
+        gpVibrate.Vibrate(leftIntensity, rightIntensity, timeout);
     }
 
     public void Move(InputAction.CallbackContext context)
     {
         mouvement = context.ReadValue<Vector2>();
-        
     }
 
     public void LookAround(InputAction.CallbackContext context)
     {
         lookMove = context.ReadValue<Vector2>();
-
     }
 
 
     void Update()
     {
-        this.transform.Translate(new Vector3(mouvement.x / 10, 0, mouvement.y / 10)*speed, Space.Self);
+        this.transform.Translate(new Vector3(mouvement.x, 0, mouvement.y)*speed*Time.deltaTime, Space.Self);
         this.transform.Rotate(new Vector3(0, lookMove.x));
         camera.transform.Rotate(new Vector3(-lookMove.y,0));
     }
