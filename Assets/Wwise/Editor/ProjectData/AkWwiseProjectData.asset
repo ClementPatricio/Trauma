@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 604e32cf6f3ee3409bb8ba78a46537dc
     GuidInternal: 
-    m_lastTime: -8586211033920276466
+    m_lastTime: -8586210422362799487
     List:
     - name: Main
       guid: 5ae19914409a0042957a7f28f690fe66
@@ -47,8 +47,50 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 9369fccadc0a7941ae6453e5255d7b08
     GuidInternal: 
-    m_lastTime: -8586211030119070676
+    m_lastTime: -8586210338618633516
     List:
+    - name: Amb_LFO_Sound
+      guid: b064a96a608628409ac65523240515d4
+      id: 814782759
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 4
+      - ElementName: Amb_LFO_Sound
+        ObjectType: 3
+      Path: Default Work Unit\Ambience\Amb_LFO_Sound
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music_MusicBox
+      guid: 23ea34fd9872f34c89d2eabf8c0b7186
+      id: 3645673277
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Music_MusicBox
+        ObjectType: 3
+      Path: Default Work Unit\Music\Music_MusicBox
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Fire
+      guid: 4c3531ed839ce448aa7835f92432894c
+      id: 2540328137
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: SFX_Fire
+        ObjectType: 3
+      Path: Default Work Unit\SFX\SFX_Fire
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Test
       guid: f4a472ebf025d04ab6facb5f7f442056
       id: 3157003241
@@ -66,8 +108,26 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: bb2354551fc1c243af8701e1410650aa
     GuidInternal: 
-    m_lastTime: -8586211055718091082
-    List: []
+    m_lastTime: -8586210338162541042
+    List:
+    - name: RTPC_Distance_FirePlace
+      guid: 2ac7573408cea94baa8a2d7b50fd3419
+      id: 114520382
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RTPC_Distance_FirePlace
+        ObjectType: 13
+      Path: Default Work Unit\RTPC_Distance_FirePlace
+    - name: RTPCS_Distance_MusicBox
+      guid: 66f1eca7e3ffcf40aad878c2573a018a
+      id: 1653484610
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RTPCS_Distance_MusicBox
+        ObjectType: 13
+      Path: Default Work Unit\RTPCS_Distance_MusicBox
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -80,8 +140,39 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: dc9af4601110ac4b90ba89e47bc02a15
     GuidInternal: 
-    m_lastTime: -8586211055716685171
-    List: []
+    m_lastTime: -8586210336487552975
+    List:
+    - name: SW_MusicBox
+      guid: 99a6dadcd8628b4fba462212cfae0020
+      id: 3462262570
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SW_MusicBox
+        ObjectType: 11
+      Path: Default Work Unit\SW_MusicBox
+      values:
+      - name: Intensity_01
+        guid: cbabc377d740804283057a8e3e55a4d8
+        id: 2191893978
+        PathAndIcons:
+        - ElementName: Intensity_01
+          ObjectType: 10
+      - name: Intensity_02
+        guid: 9a474f7fb467c74dade9cbe15ff886c5
+        id: 2191893977
+        PathAndIcons:
+        - ElementName: Intensity_02
+          ObjectType: 10
+      - name: Intensity_03
+        guid: 4479c3de01cacf4296d7f0e11355cc65
+        id: 2191893976
+        PathAndIcons:
+        - ElementName: Intensity_03
+          ObjectType: 10
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -91,5 +182,9 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Global_Gamejam_2020
+  - /Global_Gamejam_2020/Events
+  - /Global_Gamejam_2020/Events/Default Work Unit
+  - /Global_Gamejam_2020/Events/Default Work Unit/Ambience
+  - /Global_Gamejam_2020/Events/Default Work Unit/Music
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

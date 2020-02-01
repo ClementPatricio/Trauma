@@ -1,3 +1,12 @@
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3462262570	SW_MusicBox			\Default Work Unit\SW_MusicBox	
+
+Switch	ID	Name	Switch Group			Notes
+	29631719	MusicBox_End	SW_MusicBox			
+	2191893976	Intensity_03	SW_MusicBox			
+	2191893977	Intensity_02	SW_MusicBox			
+	2191893978	Intensity_01	SW_MusicBox			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	85412153	Ambience			\Default Work Unit\Master Audio Bus\Ambience	
 	393239870	SFX			\Default Work Unit\Master Audio Bus\SFX	

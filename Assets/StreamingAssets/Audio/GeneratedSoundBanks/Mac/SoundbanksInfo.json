@@ -1,0 +1,127 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "11",
+  "SoundbankVersion": "134",
+  "RootPaths": {
+   "ProjectRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\WwiseProjects\\WwiseGlobalGameJam20.git\\trunk\\",
+   "SourceFilesRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\WwiseProjects\\WwiseGlobalGameJam20.git\\trunk\\.cache\\Mac\\",
+   "SoundBanksRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\WwiseProjects\\Trauma\\Assets\\StreamingAssets\\Audio\\GeneratedSoundBanks\\Mac\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "C:\\Users\\ELE5d5ab19ee5329\\Documents\\WwiseProjects\\WwiseGlobalGameJam20.git\\trunk\\GeneratedSoundBanks\\Mac"
+  },
+  "DialogueEvents": [],
+  "StreamedFiles": [],
+  "MediaFilesNotInAnyBank": [],
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk"
+   },
+   {
+    "Id": "3161908922",
+    "GUID": "{1499E15A-9A40-4200-957A-7F28F690FE66}",
+    "Language": "SFX",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Main",
+    "ShortName": "Main",
+    "Path": "Main.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "814782759",
+      "Name": "Amb_LFO_Sound",
+      "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Amb_LFO_Sound",
+      "GUID": "{6AA964B0-8660-4028-9AC6-5523240515D4}",
+      "MaxAttenuation": "30.000000",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "3645673277",
+      "Name": "Music_MusicBox",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Music_MusicBox",
+      "GUID": "{FD34EA23-7298-4CF3-89D2-EABF8C0B7186}",
+      "MaxAttenuation": "100.000000",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "3456893342",
+      "Name": "Music_Stop_Mechanic",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\Music_Stop_Mechanic",
+      "GUID": "{5BBDDA35-ABD5-4A52-9B77-8CC43734B8E7}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.526236",
+      "DurationMax": "0.526236"
+     },
+     {
+      "Id": "2540328137",
+      "Name": "SFX_Fire",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\SFX_Fire",
+      "GUID": "{ED31354C-9C83-48E4-AA78-35F92432894C}",
+      "DurationType": "Infinite"
+     },
+     {
+      "Id": "3157003241",
+      "Name": "Test",
+      "ObjectPath": "\\Events\\Default Work Unit\\Test",
+      "GUID": "{EB72A4F4-25F0-4AD0-B6FA-CB5F7F442056}",
+      "DurationType": "Infinite"
+     }
+    ],
+    "IncludedMemoryFiles": [
+     {
+      "Id": "83078971",
+      "Language": "SFX",
+      "ShortName": "Mus_Stop.wav",
+      "Path": "SFX\\Mus_Stop_337E08F4.wem"
+     },
+     {
+      "Id": "112297882",
+      "Language": "SFX",
+      "ShortName": "Lfo_Sound.wav",
+      "Path": "SFX\\Lfo_Sound_09C5B4C0.wem"
+     },
+     {
+      "Id": "134437167",
+      "Language": "SFX",
+      "ShortName": "Mus_Layer_2.wav",
+      "Path": "SFX\\Mus_Layer_2_C42B8C3C.wem"
+     },
+     {
+      "Id": "368898759",
+      "Language": "SFX",
+      "ShortName": "Mus_Layer_1.wav",
+      "Path": "SFX\\Mus_Layer_1_C42B8C3C.wem"
+     },
+     {
+      "Id": "604695064",
+      "Language": "SFX",
+      "ShortName": "Fire_Spark.wav",
+      "Path": "SFX\\Fire_Spark_C42B8C3C.wem"
+     },
+     {
+      "Id": "606497856",
+      "Language": "SFX",
+      "ShortName": "Mus_Layer_3.wav",
+      "Path": "SFX\\Mus_Layer_3_C42B8C3C.wem"
+     },
+     {
+      "Id": "617567950",
+      "Language": "SFX",
+      "ShortName": "Fire_Main.wav",
+      "Path": "SFX\\Fire_Main_C42B8C3C.wem"
+     },
+     {
+      "Id": "1046207269",
+      "Language": "SFX",
+      "ShortName": "PM_BB_DI_1_115BPM_Dmin_C.wav",
+      "Path": "SFX\\PM_BB_DI_1_115BPM_Dmin_C_C42B8C3C.wem"
+     }
+    ]
+   }
+  ]
+ }
+}
