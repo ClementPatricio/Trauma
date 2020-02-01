@@ -58,8 +58,22 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 9369fccadc0a7941ae6453e5255d7b08
     GuidInternal: 
-    m_lastTime: -8586210284965288183
+    m_lastTime: -8586210163713090491
     List:
+    - name: Amb_Forest
+      guid: 40fa623109a0874ab1876fdbbcb6e963
+      id: 1006024461
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 4
+      - ElementName: Amb_Forest
+        ObjectType: 3
+      Path: Default Work Unit\Ambience\Amb_Forest
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Amb_LFO_Sound
       guid: b064a96a608628409ac65523240515d4
       id: 814782759
@@ -99,6 +113,20 @@ MonoBehaviour:
       - ElementName: Music_Stop_Mechanic
         ObjectType: 3
       Path: Default Work Unit\Music\Music_Stop_Mechanic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Cat
+      guid: 89a9bb665bc854479b2404cb8593f907
+      id: 481770683
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: SFX_Cat
+        ObjectType: 3
+      Path: Default Work Unit\SFX\SFX_Cat
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -213,8 +241,7 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Global_Gamejam_2020
-  - /Global_Gamejam_2020/Auxiliary Busses
-  - /Global_Gamejam_2020/Auxiliary Busses/Default Work Unit
-  - /Global_Gamejam_2020/Auxiliary Busses/Default Work Unit/Master Audio Bus
+  - /Global_Gamejam_2020/Events
+  - /Global_Gamejam_2020/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
