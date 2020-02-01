@@ -1,0 +1,19 @@
+{
+ "PluginInfo": {
+  "Project": "Global_Gamejam_2020",
+  "Platform": "Linux",
+  "BasePlatform": "Linux",
+  "Plugins": {
+   "Plugin": {
+    "Name": "System",
+    "ID": "11403271",
+    "DLL": "DefaultSink"
+   },
+   "Plugin": {
+    "Name": "No Output",
+    "ID": "11862023",
+    "DLL": "DefaultSink"
+   }
+  }
+ }
+}
