@@ -1,28 +1,33 @@
 Event	ID	Name			Wwise Object Path	Notes
 	814782759	Amb_LFO_Sound			\Default Work Unit\Ambience\Amb_LFO_Sound	
-	1941451335	Music_Vinyl			\Default Work Unit\Music\Music_Vinyl	
 	2540328137	SFX_Fire			\Default Work Unit\SFX\SFX_Fire	
 	3157003241	Test			\Default Work Unit\Test	
+	3456893342	Music_Stop_Mechanic			\Default Work Unit\Music\Music_Stop_Mechanic	
+	3645673277	Music_MusicBox			\Default Work Unit\Music\Music_MusicBox	
 
 Switch Group	ID	Name			Wwise Object Path	Notes
-	3156527866	SW_Music_Vinyl			\Default Work Unit\SW_Music_Vinyl	
+	3462262570	SW_MusicBox			\Default Work Unit\SW_MusicBox	
 
 Switch	ID	Name	Switch Group			Notes
-	1281810935	Start	SW_Music_Vinyl			
+	29631719	MusicBox_End	SW_MusicBox			
+	2191893976	Intensity_03	SW_MusicBox			
+	2191893977	Intensity_02	SW_MusicBox			
+	2191893978	Intensity_01	SW_MusicBox			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	114520382	RTPC_Distance_FirePlace			\Default Work Unit\RTPC_Distance_FirePlace	
-	500163418	RTPCS_Distance_Vinyl			\Default Work Unit\RTPCS_Distance_Vinyl	
+	1653484610	RTPCS_Distance_MusicBox			\Default Work Unit\RTPCS_Distance_MusicBox	
 
 Modulator LFO	ID	Name			Wwise Object Path	Notes
 	30184317	Modulator LFO (Custom)				
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	83078971	Mus_Stop	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Mac\SFX\Mus_Stop_337E08F4.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Music_Stop\Mus_Stop		30406
 	112297882	Lfo_Sound	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Mac\SFX\Lfo_Sound_09C5B4C0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Sound_LFO\Lfo_Sound		837645
+	134437167	Mus_Layer_2	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Mac\SFX\Mus_Layer_2_C42B8C3C.wem		\Interactive Music Hierarchy\Default Work Unit\MusicBox\MusicBox_02\MusicBox_02\Mus_Layer_2		294107
+	368898759	Mus_Layer_1	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Mac\SFX\Mus_Layer_1_C42B8C3C.wem		\Interactive Music Hierarchy\Default Work Unit\MusicBox\MusicBox_01\MusicBox_01\Mus_Layer_1		234458
 	604695064	Fire_Spark	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Mac\SFX\Fire_Spark_C42B8C3C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Fire\Fire_Spark		1175595
+	606497856	Mus_Layer_3	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Mac\SFX\Mus_Layer_3_C42B8C3C.wem		\Interactive Music Hierarchy\Default Work Unit\MusicBox\MusicBox_03\MusicBox\Mus_Layer_3		289873
 	617567950	Fire_Main	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Mac\SFX\Fire_Main_C42B8C3C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Fire\Fire_Main		1171849
 	1046207269	Test	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Mac\SFX\PM_BB_DI_1_115BPM_Dmin_C_C42B8C3C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test		1377231
-
-Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
-	45142525	Music_Vinyl	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Mac\SFX\Music_Vinyl_C42B8C3C.wem	45142525.wem	\Interactive Music Hierarchy\Default Work Unit\Vinyl\Vinyl\Music_Vinyl\Music_Vinyl	
 

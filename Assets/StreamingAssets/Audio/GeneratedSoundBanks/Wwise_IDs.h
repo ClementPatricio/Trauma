@@ -14,29 +14,33 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID AMB_LFO_SOUND = 814782759U;
-        static const AkUniqueID MUSIC_VINYL = 1941451335U;
+        static const AkUniqueID MUSIC_MUSICBOX = 3645673277U;
+        static const AkUniqueID MUSIC_STOP_MECHANIC = 3456893342U;
         static const AkUniqueID SFX_FIRE = 2540328137U;
         static const AkUniqueID TEST = 3157003241U;
     } // namespace EVENTS
 
     namespace SWITCHES
     {
-        namespace SW_MUSIC_VINYL
+        namespace SW_MUSICBOX
         {
-            static const AkUniqueID GROUP = 3156527866U;
+            static const AkUniqueID GROUP = 3462262570U;
 
             namespace SWITCH
             {
-                static const AkUniqueID START = 1281810935U;
+                static const AkUniqueID INTENSITY_01 = 2191893978U;
+                static const AkUniqueID INTENSITY_02 = 2191893977U;
+                static const AkUniqueID INTENSITY_03 = 2191893976U;
+                static const AkUniqueID MUSICBOX_END = 29631719U;
             } // namespace SWITCH
-        } // namespace SW_MUSIC_VINYL
+        } // namespace SW_MUSICBOX
 
     } // namespace SWITCHES
 
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID RTPC_DISTANCE_FIREPLACE = 114520382U;
-        static const AkUniqueID RTPCS_DISTANCE_VINYL = 500163418U;
+        static const AkUniqueID RTPCS_DISTANCE_MUSICBOX = 1653484610U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
