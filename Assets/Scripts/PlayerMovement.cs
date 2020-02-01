@@ -8,8 +8,16 @@ public class PlayerMovement : MonoBehaviour
 
     InputActions inputActions;
     GamepadVibrate gpVibrate;
-    [Range(0.0f, 10.0f)][SerializeField]
+    [SerializeField]
+    GameObject camera;
+    [Space]
+    [Range(0.0f, 10.0f)]
+    [SerializeField]
+    [Tooltip("La vitesse du personnage")]
     float speed = 2.0f;
+
+    Vector2 mouvement;
+    Vector2 lookMove;
 
     void Awake()
     {
@@ -30,7 +38,21 @@ public class PlayerMovement : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        Vector2 delta = context.ReadValue<Vector2>();
-        this.transform.Translate(new Vector3(delta.x/10, 0, delta.y/10), Space.Self);
+        mouvement = context.ReadValue<Vector2>();
+        
+    }
+
+    public void LookAround(InputAction.CallbackContext context)
+    {
+        lookMove = context.ReadValue<Vector2>();
+
+    }
+
+
+    void Update()
+    {
+        this.transform.Translate(new Vector3(mouvement.x / 10, 0, mouvement.y / 10)*speed, Space.Self);
+        this.transform.Rotate(new Vector3(0, lookMove.x));
+        camera.transform.Rotate(new Vector3(-lookMove.y,0));
     }
 }
