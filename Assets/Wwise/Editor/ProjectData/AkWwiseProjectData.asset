@@ -24,8 +24,19 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: fbb344400ce76745a4902bb77c0a4878
     GuidInternal: 
-    m_lastTime: -8586211055717466227
-    List: []
+    m_lastTime: -8586210225586733866
+    List:
+    - name: Verb_House
+      guid: f0fca7d732902a4ea6475e7416f276b4
+      id: 3320776415
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Verb_House
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\Verb_House
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
@@ -47,8 +58,22 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 9369fccadc0a7941ae6453e5255d7b08
     GuidInternal: 
-    m_lastTime: -8586210338618633516
+    m_lastTime: -8586209673523920324
     List:
+    - name: Amb_Forest
+      guid: 40fa623109a0874ab1876fdbbcb6e963
+      id: 1006024461
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 4
+      - ElementName: Amb_Forest
+        ObjectType: 3
+      Path: Default Work Unit\Ambience\Amb_Forest
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Amb_LFO_Sound
       guid: b064a96a608628409ac65523240515d4
       id: 814782759
@@ -60,6 +85,34 @@ MonoBehaviour:
       - ElementName: Amb_LFO_Sound
         ObjectType: 3
       Path: Default Work Unit\Ambience\Amb_LFO_Sound
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Game_End
+      guid: 5741a14c0765024c9fae744e73ddaec0
+      id: 3271665593
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GameState
+        ObjectType: 4
+      - ElementName: Game_End
+        ObjectType: 3
+      Path: Default Work Unit\GameState\Game_End
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Game_Intro
+      guid: 6c59ca5d3f6b6a45b0d91a1c506650bd
+      id: 387455016
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GameState
+        ObjectType: 4
+      - ElementName: Game_Intro
+        ObjectType: 3
+      Path: Default Work Unit\GameState\Game_Intro
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -77,6 +130,62 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Music_Stop_Mechanic
+      guid: 35dabd5bd5ab524a9b778cc43734b8e7
+      id: 3456893342
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Music
+        ObjectType: 4
+      - ElementName: Music_Stop_Mechanic
+        ObjectType: 3
+      Path: Default Work Unit\Music\Music_Stop_Mechanic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Cat
+      guid: 89a9bb665bc854479b2404cb8593f907
+      id: 481770683
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: SFX_Cat
+        ObjectType: 3
+      Path: Default Work Unit\SFX\SFX_Cat
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_CatMwe
+      guid: aa147b857456ea4ebddcd0c7a14ef72b
+      id: 1934911244
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: SFX_CatMwe
+        ObjectType: 3
+      Path: Default Work Unit\SFX\SFX_CatMwe
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Draw
+      guid: 469cd43fd8478d43abd5b69c79bd718b
+      id: 1773688879
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: SFX_Draw
+        ObjectType: 3
+      Path: Default Work Unit\SFX\SFX_Draw
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: SFX_Fire
       guid: 4c3531ed839ce448aa7835f92432894c
       id: 2540328137
@@ -88,6 +197,20 @@ MonoBehaviour:
       - ElementName: SFX_Fire
         ObjectType: 3
       Path: Default Work Unit\SFX\SFX_Fire
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Paper
+      guid: 41b59d00475ada4e874b3f7c73984f0a
+      id: 3124573721
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: SFX_Paper
+        ObjectType: 3
+      Path: Default Work Unit\SFX\SFX_Paper
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -108,7 +231,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: bb2354551fc1c243af8701e1410650aa
     GuidInternal: 
-    m_lastTime: -8586210338162541042
+    m_lastTime: -8586210215993498235
     List:
     - name: RTPC_Distance_FirePlace
       guid: 2ac7573408cea94baa8a2d7b50fd3419
@@ -140,7 +263,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: dc9af4601110ac4b90ba89e47bc02a15
     GuidInternal: 
-    m_lastTime: -8586210336487552975
+    m_lastTime: -8586210310073953471
     List:
     - name: SW_MusicBox
       guid: 99a6dadcd8628b4fba462212cfae0020
@@ -170,6 +293,12 @@ MonoBehaviour:
         PathAndIcons:
         - ElementName: Intensity_03
           ObjectType: 10
+      - name: MusicBox_End
+        guid: 5b1c64d5d86bbf4ca5894297f5eb3644
+        id: 29631719
+        PathAndIcons:
+        - ElementName: MusicBox_End
+          ObjectType: 10
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
@@ -184,7 +313,5 @@ MonoBehaviour:
   - /Global_Gamejam_2020
   - /Global_Gamejam_2020/Events
   - /Global_Gamejam_2020/Events/Default Work Unit
-  - /Global_Gamejam_2020/Events/Default Work Unit/Ambience
-  - /Global_Gamejam_2020/Events/Default Work Unit/Music
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

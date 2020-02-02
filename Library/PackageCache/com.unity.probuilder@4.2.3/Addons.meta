@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Library/PackageCache/com.unity.probuilder@4.2.3/Addons.meta
 guid: 1db26a9bb354d42cda31cf8b83b7fed4
+=======
+guid: bc06b187c6a1636458f0aadefbd6b466
+>>>>>>> b1a36f1f17de7af27cef27ebe0420e55d63f57ec:Assets/StreamingAssets/Audio/GeneratedSoundBanks/Linux/English(US).meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

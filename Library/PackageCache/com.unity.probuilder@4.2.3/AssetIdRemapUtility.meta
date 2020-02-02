@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Library/PackageCache/com.unity.probuilder@4.2.3/AssetIdRemapUtility.meta
 guid: 9e50e13f5457645a89d6c209eac9242a
+=======
+guid: eabdbc1ecfb154440a680f6d4932c5e1
+>>>>>>> b1a36f1f17de7af27cef27ebe0420e55d63f57ec:Assets/StreamingAssets/Audio/GeneratedSoundBanks/Mac/English(US).meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

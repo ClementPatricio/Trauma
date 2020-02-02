@@ -2,15 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Interactions;
+using UnityEngine.InputSystem.Editor;
+using UnityEngine.InputSystem.Controls;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
 
+    [SerializeField]
+    Image filledInteraction;
+    [SerializeField]
+    Image interactionButton;
+
+
     InputActions inputActions;
     GamepadVibrate gpVibrate;
+
     [SerializeField]
-    GameObject camera;
+    GameObject playerEyes;
+
     [Space]
+
     [Range(0.0f, 10.0f)]
     [SerializeField]
     [Tooltip("La vitesse du personnage")]
@@ -19,19 +32,23 @@ public class PlayerMovement : MonoBehaviour
     Vector2 mouvement;
     Vector2 lookMove;
 
+    private bool interacting;
+    private float interactTime;
+    [SerializeField]
+    [Range(1.0f,5.0f)]
+    private float holdingTime;
+    private bool canInteract;
+    private bool willInteract;
+
     void Awake()
     {
+        filledInteraction.fillClockwise = true;
+        filledInteraction.fillAmount = 0.0f;
+        interactionButton.fillAmount = 0.0f;
         gpVibrate = GetComponent<GamepadVibrate>();
         inputActions = new InputActions();
-    }
-
-    public void VibrateRight(float intensity, float timeout)
-    {
-        gpVibrate.Vibrate(intensity, 0.0f, timeout);
-    }
-    public void VibrateLeft(float intensity, float timeout)
-    {
-        gpVibrate.Vibrate(0.0f, intensity, timeout);
+        interacting = false;
+        interactTime = 0.0f;
     }
 
     public void Vibrate(float leftIntensity, float rightIntensity, float timeout)
@@ -49,11 +66,55 @@ public class PlayerMovement : MonoBehaviour
         lookMove = context.ReadValue<Vector2>();
     }
 
+    public void Interact(InputAction.CallbackContext context)
+    {
+        if (context.started && !interacting)
+        {
+            interacting = true;
+            interactionButton.fillAmount = 1.0f;
+
+        }
+        else
+        {
+            if (context.started && interacting && interactTime > holdingTime)
+            {
+                OnInteract();
+                interacting = false;
+                interactTime = 0.0f;
+                filledInteraction.fillAmount = 0.0f;
+                interactionButton.fillAmount = 0.0f;
+
+            }
+            else
+            {
+                if (context.started && interacting && interactTime < holdingTime)
+                {
+                    interacting = false;
+                    interactTime = 0.0f;
+                    filledInteraction.fillAmount = 0.0f;
+                    interactionButton.fillAmount = 0.0f;
+
+                }
+            }
+        }
+    }
+
+    public void OnInteract()
+    {
+        Debug.Log("d");
+    }
 
     void Update()
     {
         this.transform.Translate(new Vector3(mouvement.x, 0, mouvement.y)*speed*Time.deltaTime, Space.Self);
         this.transform.Rotate(new Vector3(0, lookMove.x));
-        camera.transform.Rotate(new Vector3(-lookMove.y,0));
+        playerEyes.transform.Rotate(new Vector3(-lookMove.y,0));
+        if (interacting)
+        {
+            interactTime += Time.deltaTime;
+            filledInteraction.fillAmount = interactTime / holdingTime;
+        }
     }
 }
+
+
