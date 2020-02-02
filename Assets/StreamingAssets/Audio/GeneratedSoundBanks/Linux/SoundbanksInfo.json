@@ -29,7 +29,7 @@
     "Id": "412050643",
     "Language": "SFX",
     "ShortName": "Game_Intro.wav",
-    "Path": "SFX\\Game_Intro_331D1B94.wem"
+    "Path": "SFX\\Game_Intro_42794FDB.wem"
    },
    {
     "Id": "467330099",
@@ -258,8 +258,8 @@
       "Id": "412050643",
       "Language": "SFX",
       "ShortName": "Game_Intro.wav",
-      "Path": "SFX\\Game_Intro_331D1B94.wem",
-      "PrefetchSize": "6011"
+      "Path": "SFX\\Game_Intro_42794FDB.wem",
+      "PrefetchSize": "5893"
      },
      {
       "Id": "417362420",
