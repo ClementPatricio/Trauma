@@ -35,7 +35,7 @@
                     "name": "",
                     "id": "6e571658-791f-4c01-b77e-4cf96bad6948",
                     "path": "<Gamepad>/buttonSouth",
-                    "interactions": "",
+                    "interactions": "Hold",
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Interact",
