@@ -51,6 +51,7 @@ public class UIManager : Manager
     public void TraitementIntro()
     {
         //ici gestion de l'intro
+        
     }
 
     override
