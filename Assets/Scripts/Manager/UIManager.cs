@@ -9,7 +9,6 @@ public class UIManager : Manager
     private static UIManager instance;
     public static UIManager getInstance()
     {
-        //ou instantie si n'existe pas ?
         return instance;
     }
 
@@ -52,6 +51,7 @@ public class UIManager : Manager
     public void TraitementIntro()
     {
         //ici gestion de l'intro
+        
     }
 
     override

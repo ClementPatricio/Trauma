@@ -45,18 +45,19 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
+        setStage(GameStage.accident);
         setState(GameState.intro);
     }
 
     public void Stop()
     {
-#if UNITY_EDITOR
-        // Application.Quit() does not work in the editor so
-        // UnityEditor.EditorApplication.isPlaying need to be set to false to end the game
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-                                Application.Quit();
-#endif
+        #if UNITY_EDITOR
+                // Application.Quit() does not work in the editor so
+                // UnityEditor.EditorApplication.isPlaying need to be set to false to end the game
+                UnityEditor.EditorApplication.isPlaying = false;
+        #else
+                                        Application.Quit();
+        #endif
     }
 
     public void setStage(GameStage stage)

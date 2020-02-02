@@ -38,7 +38,7 @@
 			}*/
 
 
-			float r = rand(float3(i.pos.x+time, i.pos.y + time,0.0f));
+			float r = rand(float3(i.pos.x+time*10.0f, i.pos.y + time * 10.0f,0.0f));
 
 			//return lerp(base, mask, _maskBlend);
 			//float4 col = float4(time, time, time, 1.0f);
