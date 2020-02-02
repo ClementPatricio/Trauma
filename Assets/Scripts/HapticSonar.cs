@@ -33,7 +33,7 @@ public class HapticSonar : MonoBehaviour
             
             sonarIntensity.x = ((-2.0f / 3.0f) * tmp.x) + (1.0f / 3.0f);
             sonarIntensity.y = ((2.0f / 3.0f) * tmp.x) + (1.0f / 3.0f);
-            Debug.Log(sonarIntensity.ToString());
+            //Debug.Log(sonarIntensity.ToString());
             playerMovement.Vibrate(sonarIntensity.x, sonarIntensity.y, 0.1f);
             timer = 0;
         }
@@ -54,8 +54,8 @@ public class HapticSonar : MonoBehaviour
         Vector2 newPos = new Vector2();
         Vector3 newPos3D = this.transform.InverseTransformDirection(objectToFind.transform.position - this.transform.position);
         newPos.x = newPos3D.x;
-        newPos.y = newPos3D.y;
-        
+        newPos.y = newPos3D.z;
+        Debug.Log(newPos3D.ToString());
         return newPos;
     }
 
