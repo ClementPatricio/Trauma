@@ -24,6 +24,7 @@ public class HapticSonar : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
+        sonarFrenquency = (1.0f / getDistanceFromObject())*10;
         if (timer > 1/sonarFrenquency)
         {
             
@@ -33,8 +34,7 @@ public class HapticSonar : MonoBehaviour
             
             sonarIntensity.x = ((-2.0f / 3.0f) * tmp.x) + (1.0f / 3.0f);
             sonarIntensity.y = ((2.0f / 3.0f) * tmp.x) + (1.0f / 3.0f);
-            //Debug.Log(sonarIntensity.ToString());
-            playerMovement.Vibrate(sonarIntensity.x, sonarIntensity.y, 0.1f);
+            playerMovement.Vibrate(sonarIntensity.x, sonarIntensity.y, (1.0f/sonarFrenquency)/2.0f);
             timer = 0;
         }
     }
@@ -44,10 +44,6 @@ public class HapticSonar : MonoBehaviour
         this.objectToFind = objectToFind;
     }
 
-    public void setSonarFrenquency(float frenquency)
-    {
-        this.sonarFrenquency = frenquency;
-    }
 
     public Vector2 getPostionRelativeToPlayer()
     {
@@ -55,8 +51,12 @@ public class HapticSonar : MonoBehaviour
         Vector3 newPos3D = this.transform.InverseTransformDirection(objectToFind.transform.position - this.transform.position);
         newPos.x = newPos3D.x;
         newPos.y = newPos3D.z;
-        Debug.Log(newPos3D.ToString());
         return newPos;
+    }
+
+    public float getDistanceFromObject()
+    {
+        return Vector3.Distance(this.transform.position, objectToFind.transform.position);
     }
 
 
