@@ -58,7 +58,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 9369fccadc0a7941ae6453e5255d7b08
     GuidInternal: 
-    m_lastTime: -8586210163713090491
+    m_lastTime: -8586209673523920324
     List:
     - name: Amb_Forest
       guid: 40fa623109a0874ab1876fdbbcb6e963
@@ -85,6 +85,34 @@ MonoBehaviour:
       - ElementName: Amb_LFO_Sound
         ObjectType: 3
       Path: Default Work Unit\Ambience\Amb_LFO_Sound
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Game_End
+      guid: 5741a14c0765024c9fae744e73ddaec0
+      id: 3271665593
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GameState
+        ObjectType: 4
+      - ElementName: Game_End
+        ObjectType: 3
+      Path: Default Work Unit\GameState\Game_End
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Game_Intro
+      guid: 6c59ca5d3f6b6a45b0d91a1c506650bd
+      id: 387455016
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GameState
+        ObjectType: 4
+      - ElementName: Game_Intro
+        ObjectType: 3
+      Path: Default Work Unit\GameState\Game_Intro
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -130,6 +158,34 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: SFX_CatMwe
+      guid: aa147b857456ea4ebddcd0c7a14ef72b
+      id: 1934911244
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: SFX_CatMwe
+        ObjectType: 3
+      Path: Default Work Unit\SFX\SFX_CatMwe
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Draw
+      guid: 469cd43fd8478d43abd5b69c79bd718b
+      id: 1773688879
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: SFX_Draw
+        ObjectType: 3
+      Path: Default Work Unit\SFX\SFX_Draw
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: SFX_Fire
       guid: 4c3531ed839ce448aa7835f92432894c
       id: 2540328137
@@ -141,6 +197,20 @@ MonoBehaviour:
       - ElementName: SFX_Fire
         ObjectType: 3
       Path: Default Work Unit\SFX\SFX_Fire
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SFX_Paper
+      guid: 41b59d00475ada4e874b3f7c73984f0a
+      id: 3124573721
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFX
+        ObjectType: 4
+      - ElementName: SFX_Paper
+        ObjectType: 3
+      Path: Default Work Unit\SFX\SFX_Paper
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
