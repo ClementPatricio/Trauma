@@ -1,4 +1,4 @@
-﻿Shader "Shaders/ShaderTestDeux"
+﻿Shader "Shaders/NoVision"
 {
 	Properties{
 		_MainTex("Base (RGB)", 2D) = "white" {}
