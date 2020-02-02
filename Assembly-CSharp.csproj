@@ -301,11 +301,13 @@
     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Linux\Main.txt" />
     <None Include="Assets\Shaders\ShaderObject.shader" />
     <None Include="Assets\Shaders\VisionGrey.shader" />
+    <None Include="Assets\ErbGameArt\Procedural fire\Shaders\FireSphere.shader" />
     <None Include="Assets\Wwise\Version.txt" />
     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\PluginInfo.xml" />
     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Linux\Init.txt" />
     <None Include="Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\Init.txt" />
     <Reference Include="Unity.Timeline.Editor">
+<<<<<<< HEAD
       <HintPath>G:/Unity_projets/Trauma/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
@@ -340,6 +342,42 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>G:/Unity_projets/Trauma/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+=======
+      <HintPath>C:/Users/ELE5d5ab19ee5329/Documents/WwiseProjects/Trauma/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>C:/Users/ELE5d5ab19ee5329/Documents/WwiseProjects/Trauma/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>C:/Users/ELE5d5ab19ee5329/Documents/WwiseProjects/Trauma/Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+      <HintPath>C:/Users/ELE5d5ab19ee5329/Documents/WwiseProjects/Trauma/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Users/ELE5d5ab19ee5329/Documents/WwiseProjects/Trauma/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>C:/Users/ELE5d5ab19ee5329/Documents/WwiseProjects/Trauma/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>C:/Users/ELE5d5ab19ee5329/Documents/WwiseProjects/Trauma/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>C:/Users/ELE5d5ab19ee5329/Documents/WwiseProjects/Trauma/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+      <HintPath>C:/Users/ELE5d5ab19ee5329/Documents/WwiseProjects/Trauma/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>C:/Users/ELE5d5ab19ee5329/Documents/WwiseProjects/Trauma/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:/Users/ELE5d5ab19ee5329/Documents/WwiseProjects/Trauma/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>C:/Users/ELE5d5ab19ee5329/Documents/WwiseProjects/Trauma/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+>>>>>>> master
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.0f6/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

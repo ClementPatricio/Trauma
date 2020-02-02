@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 using System.Collections;
+=======
+
+﻿using System.Collections;
+>>>>>>> master
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -41,4 +46,9 @@ public class Render : MonoBehaviour
     {
         //mat.SetFloat("time", Mathf.Sin(Time.realtimeSinceStartup*40.0f));
     }
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> master
