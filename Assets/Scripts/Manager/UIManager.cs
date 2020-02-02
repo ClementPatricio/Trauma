@@ -77,10 +77,7 @@ public class UIManager : Manager
         if (tmp < 10.0f)
         {
             Color color = im.color;
-            if (color.r >= 0.0f)
-            {
-                im.color = new Color(im.color.r - 0.001f, im.color.g - 0.001f, im.color.b - 0.001f, 1.0f);
-            }
+            im.color = new Color(im.color.r - 0.005f, im.color.g - 0.005f, im.color.b - 0.005f, 1.0f);
             if(tmp >= 7.0f && titre.color.a == 0.0f)
             {
                 titre.color = new Color(titre.color.r, titre.color.g, titre.color.b, 1.0f);
@@ -116,9 +113,10 @@ public class UIManager : Manager
     public void TraitementSouvenir()
     {
         fondu();
-        if(!up && alpha == 0.0f)
+        if(!up && alpha <= 0.0f)
         {
             canvas.enabled = false;
+            //Debug.Log("Fin phase souvenir");
             GameManager.getInstance().setState(GameState.transition);
         }
         
@@ -230,7 +228,7 @@ public class UIManager : Manager
                 break;
             case GameState.souvenir:
                 up = true;
-                alpha = 0.1f;
+                alpha = 0.001f;
                 
                 switch (GameManager.getInstance().getStage())
                 {

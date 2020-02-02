@@ -109,6 +109,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnInteract()
     {
+
         GameManager.getInstance().setState(GameState.souvenir);
         Debug.Log("c");
 

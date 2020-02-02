@@ -74,27 +74,35 @@ public class GameManager : MonoBehaviour
         sound_manager.actualiseState(state);
         if(state == GameState.transition)
         {
+            Debug.Log("Début transition");
             switch (GameManager.getInstance().getStage())
             {
                 case GameStage.accident:
-                    GameManager.getInstance().setStage(GameStage.chat);
+                    setStage(GameStage.chat);
+                    //sonar.setObjectToFind(objects[0]);
                     break;
                 case GameStage.chat:
-                    GameManager.getInstance().setStage(GameStage.cheminee);
+                    setStage(GameStage.cheminee);
+                    sonar.setObjectToFind(objects[1]);
                     break;
                 case GameStage.cheminee:
-                    GameManager.getInstance().setStage(GameStage.dessin);
+                    setStage(GameStage.dessin);
+                    sonar.setObjectToFind(objects[2]);
                     break;
                 case GameStage.dessin:
-                    GameManager.getInstance().setStage(GameStage.boite_a_musique);
+                    setStage(GameStage.boite_a_musique);
+                    sonar.setObjectToFind(objects[3]);
                     break;
                 case GameStage.boite_a_musique:
-                    GameManager.getInstance().setStage(GameStage.fleurs);
+                    setStage(GameStage.fleurs);
+                    sonar.setObjectToFind(objects[4]);
                     break;
                 case GameStage.fleurs:
-                    GameManager.getInstance().setState(GameState.end);
+                    setState(GameState.end);
+                    sonar.setObjectToFind(objects[5]);
                     break;
             }
+            Debug.Log("Transition Play");
             setState(GameState.play);
         }
     }
