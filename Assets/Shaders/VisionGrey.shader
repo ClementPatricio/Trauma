@@ -1,4 +1,4 @@
-﻿Shader "Shaders/ShaderGrey"
+﻿Shader "Shaders/VisionGrey"
 {
 	Properties{
 	_MainTex("Base (RGB)", 2D) = "white" {}
