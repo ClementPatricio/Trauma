@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     public GameObject [] objects;
+    [SerializeField]
+    GameObject player;
+    HapticSonar sonar;
 
     //contient les différents manager
     private UIManager ui_manager;
@@ -44,6 +47,8 @@ public class GameManager : MonoBehaviour
     {
         setStage(GameStage.accident);
         setState(GameState.intro);
+        sonar = player.GetComponent<HapticSonar>();
+        sonar.setObjectToFind(objects[0]);
     }
 
     public void Stop()

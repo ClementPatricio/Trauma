@@ -68,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Interact(InputAction.CallbackContext context)
     {
-       if (!canInteract)
+        if (!canInteract)
        {
             interacting = false;
             interactTime = 0.0f;
@@ -110,6 +110,8 @@ public class PlayerMovement : MonoBehaviour
     public void OnInteract()
     {
         GameManager.getInstance().setState(GameState.souvenir);
+        Debug.Log("c");
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -119,6 +121,8 @@ public class PlayerMovement : MonoBehaviour
         filledInteraction.fillAmount = 0.0f;
         interactionButton.fillAmount = 0.0f;
         this.canInteract = true;
+        Debug.Log("c");
+
     }
 
     void OnTriggerExit(Collider other)
@@ -132,14 +136,18 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        this.transform.Translate(new Vector3(mouvement.x, 0, mouvement.y)*speed*Time.deltaTime, Space.Self);
-        this.transform.Rotate(new Vector3(0, lookMove.x));
-        playerEyes.transform.Rotate(new Vector3(-lookMove.y,0));
-        if (interacting)
+        if(GameManager.getInstance().getState() == GameState.play)
         {
-            interactTime += Time.deltaTime;
-            filledInteraction.fillAmount = interactTime / holdingTime;
+            this.transform.Translate(new Vector3(mouvement.x, 0, mouvement.y) * speed * Time.deltaTime, Space.Self);
+            this.transform.Rotate(new Vector3(0, lookMove.x));
+            playerEyes.transform.Rotate(new Vector3(-lookMove.y, 0));
+            if (interacting)
+            {
+                interactTime += Time.deltaTime;
+                filledInteraction.fillAmount = interactTime / holdingTime;
+            }
         }
+        
     }
 }
 
