@@ -5,9 +5,16 @@ using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
 using UnityEngine.InputSystem.Editor;
 using UnityEngine.InputSystem.Controls;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+    [SerializeField]
+    Image filledInteraction;
+    [SerializeField]
+    Image interactionButton;
+
 
     InputActions inputActions;
     GamepadVibrate gpVibrate;
@@ -35,6 +42,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Awake()
     {
+        filledInteraction.fillClockwise = true;
+        filledInteraction.fillAmount = 0.0f;
+        interactionButton.fillAmount = 0.0f;
         gpVibrate = GetComponent<GamepadVibrate>();
         inputActions = new InputActions();
         interacting = false;
@@ -58,24 +68,66 @@ public class PlayerMovement : MonoBehaviour
 
     public void Interact(InputAction.CallbackContext context)
     {
-        if (context.started)
+       if (!canInteract)
+       {
+            interacting = false;
+            interactTime = 0.0f;
+            filledInteraction.fillAmount = 0.0f;
+            interactionButton.fillAmount = 0.0f;
+            return;
+       }
+        if (context.started && !interacting && context.ReadValue<float>() == 1.0f)
         {
             interacting = true;
+            interactionButton.fillAmount = 1.0f;
+
         }
-        if (context.performed)
+        else
         {
-            willInteract = true;
+            if (context.started && interacting && interactTime > holdingTime)
+            {
+                OnInteract();
+                interacting = false;
+                interactTime = 0.0f;
+                filledInteraction.fillAmount = 0.0f;
+                interactionButton.fillAmount = 0.0f;
+
+            }
+            else
+            {
+                if (context.started && interacting && interactTime < holdingTime)
+                {
+                    interacting = false;
+                    interactTime = 0.0f;
+                    filledInteraction.fillAmount = 0.0f;
+                    interactionButton.fillAmount = 0.0f;
+
+                }
+            }
         }
-        //if (context.)
-        {
-            
-        }
-        Debug.Log("c");
     }
 
     public void OnInteract()
     {
-        //Debug.Log("c");
+        GameManager.getInstance().setState(GameState.souvenir);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        interacting = false;
+        interactTime = 0.0f;
+        filledInteraction.fillAmount = 0.0f;
+        interactionButton.fillAmount = 0.0f;
+        this.canInteract = true;
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        interacting = false;
+        interactTime = 0.0f;
+        filledInteraction.fillAmount = 0.0f;
+        interactionButton.fillAmount = 0.0f;
+        this.canInteract = false;
     }
 
     void Update()
@@ -86,50 +138,9 @@ public class PlayerMovement : MonoBehaviour
         if (interacting)
         {
             interactTime += Time.deltaTime;
-            if(interactTime > holdingTime)
-            {
-                willInteract = true;
-                interacting = false;
-            }
+            filledInteraction.fillAmount = interactTime / holdingTime;
         }
     }
 }
 
 
-public class MyHoldInteraction : IInputInteraction
-{
-    public float duration = 2.0f;
-
-    public void Process(ref InputInteractionContext context)
-    {
-        switch (context.phase)
-        {
-            case InputActionPhase.Waiting:
-                if (context.ReadValue<float>() == 1)
-                {
-                    context.Started();
-                }
-                break;
-
-            case InputActionPhase.Started:
-                if (context.ReadValue<float>() == 0)
-                    if(context.time > duration)
-                    {
-                        context.Performed();
-                    }
-                    else
-                    {
-                        context.Canceled();
-                    }
-                break;
-        }
-    }
-
-    // Unlike processors, Interactions can be stateful, meaning that you can keep
-    // local state that mutates over time as input is received. The system might
-    // ask Interactions to reset such state at certain points by invoking the `Reset()`
-    // method.
-    public void Reset()
-    {
-    }
-}
