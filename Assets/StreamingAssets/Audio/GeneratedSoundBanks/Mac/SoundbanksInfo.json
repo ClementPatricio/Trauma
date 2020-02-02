@@ -14,10 +14,22 @@
   "DialogueEvents": [],
   "StreamedFiles": [
    {
+    "Id": "134437167",
+    "Language": "SFX",
+    "ShortName": "Mus_Layer_2.wav",
+    "Path": "SFX\\Mus_Layer_2_C42B8C3C.wem"
+   },
+   {
     "Id": "187434340",
     "Language": "SFX",
     "ShortName": "Pad_Draw.wav",
     "Path": "SFX\\Pad_Draw_C42B8C3C.wem"
+   },
+   {
+    "Id": "368898759",
+    "Language": "SFX",
+    "ShortName": "Mus_Layer_1.wav",
+    "Path": "SFX\\Mus_Layer_1_C42B8C3C.wem"
    },
    {
     "Id": "376664486",
@@ -36,6 +48,12 @@
     "Language": "SFX",
     "ShortName": "Ambience_Forest.wav",
     "Path": "SFX\\Ambience_Forest_C42B8C3C.wem"
+   },
+   {
+    "Id": "606497856",
+    "Language": "SFX",
+    "ShortName": "Mus_Layer_3.wav",
+    "Path": "SFX\\Mus_Layer_3_C42B8C3C.wem"
    },
    {
     "Id": "660604617",
@@ -175,7 +193,13 @@
     ],
     "ReferencedStreamedFiles": [
      {
+      "Id": "134437167"
+     },
+     {
       "Id": "187434340"
+     },
+     {
+      "Id": "368898759"
      },
      {
       "Id": "376664486"
@@ -185,6 +209,9 @@
      },
      {
       "Id": "467330099"
+     },
+     {
+      "Id": "606497856"
      },
      {
       "Id": "660604617"
@@ -225,12 +252,6 @@
       "Path": "SFX\\Lfo_Sound_09C5B4C0.wem"
      },
      {
-      "Id": "134437167",
-      "Language": "SFX",
-      "ShortName": "Mus_Layer_2.wav",
-      "Path": "SFX\\Mus_Layer_2_C42B8C3C.wem"
-     },
-     {
       "Id": "266438315",
       "Language": "SFX",
       "ShortName": "Paper_01.wav",
@@ -247,12 +268,6 @@
       "Language": "SFX",
       "ShortName": "Cat_03.wav",
       "Path": "SFX\\Cat_03_82793208.wem"
-     },
-     {
-      "Id": "368898759",
-      "Language": "SFX",
-      "ShortName": "Mus_Layer_1.wav",
-      "Path": "SFX\\Mus_Layer_1_C42B8C3C.wem"
      },
      {
       "Id": "412050643",
@@ -302,12 +317,6 @@
       "Language": "SFX",
       "ShortName": "Fire_Spark.wav",
       "Path": "SFX\\Fire_Spark_C42B8C3C.wem"
-     },
-     {
-      "Id": "606497856",
-      "Language": "SFX",
-      "ShortName": "Mus_Layer_3.wav",
-      "Path": "SFX\\Mus_Layer_3_C42B8C3C.wem"
      },
      {
       "Id": "617567950",
