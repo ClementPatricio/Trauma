@@ -64,7 +64,7 @@
 				<Event Id="1934911244" Name="SFX_CatMwe" ObjectPath="\Events\Default Work Unit\SFX\SFX_CatMwe" GUID="{857B14AA-5674-4EEA-BDDC-D0C7A14EF72B}" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.836569" DurationMax="0.836569"/>
 				<Event Id="1773688879" Name="SFX_Draw" ObjectPath="\Events\Default Work Unit\SFX\SFX_Draw" GUID="{3FD49C46-47D8-438D-ABD5-B69C79BD718B}" DurationType="Infinite"/>
 				<Event Id="2540328137" Name="SFX_Fire" ObjectPath="\Events\Default Work Unit\SFX\SFX_Fire" GUID="{ED31354C-9C83-48E4-AA78-35F92432894C}" DurationType="Infinite"/>
-				<Event Id="3124573721" Name="SFX_Paper" ObjectPath="\Events\Default Work Unit\SFX\SFX_Paper" GUID="{009DB541-5A47-4EDA-874B-3F7C73984F0A}" DurationType="OneShot" DurationMin="0.335805" DurationMax="0.394195"/>
+				<Event Id="3124573721" Name="SFX_Paper" ObjectPath="\Events\Default Work Unit\SFX\SFX_Paper" GUID="{009DB541-5A47-4EDA-874B-3F7C73984F0A}" DurationType="OneShot" DurationMin="0.430483" DurationMax="0.505336"/>
 				<Event Id="3157003241" Name="Test" ObjectPath="\Events\Default Work Unit\Test" GUID="{EB72A4F4-25F0-4AD0-B6FA-CB5F7F442056}" DurationType="Infinite"/>
 			</IncludedEvents>
 			<ReferencedStreamedFiles>
