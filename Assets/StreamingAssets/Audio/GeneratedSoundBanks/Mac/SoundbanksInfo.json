@@ -29,7 +29,7 @@
     "Id": "412050643",
     "Language": "SFX",
     "ShortName": "Game_Intro.wav",
-    "Path": "SFX\\Game_Intro_42794FDB.wem"
+    "Path": "SFX\\Game_Intro_F14C0FF1.wem"
    },
    {
     "Id": "467330099",
@@ -162,8 +162,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\SFX_Paper",
       "GUID": "{009DB541-5A47-4EDA-874B-3F7C73984F0A}",
       "DurationType": "OneShot",
-      "DurationMin": "0.430483",
-      "DurationMax": "0.505336"
+      "DurationMin": "0.383517",
+      "DurationMax": "0.520143"
      },
      {
       "Id": "3157003241",
@@ -258,7 +258,7 @@
       "Id": "412050643",
       "Language": "SFX",
       "ShortName": "Game_Intro.wav",
-      "Path": "SFX\\Game_Intro_42794FDB.wem",
+      "Path": "SFX\\Game_Intro_F14C0FF1.wem",
       "PrefetchSize": "5893"
      },
      {
