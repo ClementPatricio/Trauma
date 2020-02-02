@@ -107,6 +107,7 @@ public class SoundManager : Manager
                 break;
             case GameState.souvenir:
                 ;
+                AkSoundEngine.PostEvent("SFX_Paper", SoundFlower);
                 break;
 
             case GameState.end:
