@@ -164,8 +164,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\SFX_Paper",
       "GUID": "{009DB541-5A47-4EDA-874B-3F7C73984F0A}",
       "DurationType": "OneShot",
-      "DurationMin": "0.335805",
-      "DurationMax": "0.394195"
+      "DurationMin": "0.430483",
+      "DurationMax": "0.505336"
      },
      {
       "Id": "3157003241",
