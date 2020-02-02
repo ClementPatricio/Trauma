@@ -68,7 +68,15 @@ public class PlayerMovement : MonoBehaviour
 
     public void Interact(InputAction.CallbackContext context)
     {
-        if (context.started && !interacting)
+       if (!canInteract)
+       {
+            interacting = false;
+            interactTime = 0.0f;
+            filledInteraction.fillAmount = 0.0f;
+            interactionButton.fillAmount = 0.0f;
+            return;
+       }
+        if (context.started && !interacting && context.ReadValue<float>() == 1.0f)
         {
             interacting = true;
             interactionButton.fillAmount = 1.0f;
@@ -101,7 +109,25 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnInteract()
     {
-        Debug.Log("d");
+        GameManager.getInstance().setState(GameState.souvenir);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        interacting = false;
+        interactTime = 0.0f;
+        filledInteraction.fillAmount = 0.0f;
+        interactionButton.fillAmount = 0.0f;
+        this.canInteract = true;
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        interacting = false;
+        interactTime = 0.0f;
+        filledInteraction.fillAmount = 0.0f;
+        interactionButton.fillAmount = 0.0f;
+        this.canInteract = false;
     }
 
     void Update()

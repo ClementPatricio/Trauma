@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
     GameState state;
     GameStage stage;
 
+    [SerializeField]
+    GameObject[] objects;
+
 
     //contient les différents manager
     private LevelManager level_manager;

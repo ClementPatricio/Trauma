@@ -31,7 +31,7 @@ public class UIManager : Manager
     {
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
         im = GameObject.Find("Screen").GetComponent<Image>();
-        render = GameObject.Find("Camera").GetComponent<Render>();
+        render = GameObject.Find("Main Camera").GetComponent<Render>();
     }
 
     override
