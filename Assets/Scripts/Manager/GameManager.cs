@@ -99,7 +99,6 @@ public class GameManager : MonoBehaviour
                     break;
                 case GameStage.fleurs:
                     setState(GameState.end);
-                    sonar.setObjectToFind(objects[5]);
                     break;
             }
             Debug.Log("Transition Play");
