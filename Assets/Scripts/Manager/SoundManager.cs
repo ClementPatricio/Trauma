@@ -4,6 +4,17 @@ using UnityEngine;
 
 public class SoundManager : Manager
 {
+    public GameObject SoundIntro;
+
+    public GameObject SoundCat;
+    public GameObject SoundFirePlace;
+    public GameObject SoundDraw;
+    public GameObject SoundMusicBox;
+    public GameObject SoundFlower;
+    public GameObject SoundPicture;
+
+    public GameObject SoundEnd;
+
     void Awake()
     {
 
@@ -46,6 +57,7 @@ public class SoundManager : Manager
         switch (state)
         {
             case GameState.intro:
+                AkSoundEngine.PostEvent("Game_Intro", SoundIntro);
                 ;
                 break;
             case GameState.play:
@@ -56,16 +68,22 @@ public class SoundManager : Manager
                 switch (GameManager.getInstance().getStage())
                 {
                     case GameStage.accident:
+                        AkSoundEngine.PostEvent("SFX_Cat", SoundCat);
                         break;
                     case GameStage.chat:
+                        AkSoundEngine.PostEvent("SFX_Fire", SoundFirePlace);
                         break;
                     case GameStage.cheminee:
+                        AkSoundEngine.PostEvent("SFX_Draw", SoundDraw);
                         break;
                     case GameStage.dessin:
+                        AkSoundEngine.PostEvent("Music_MusicBox", SoundMusicBox);
                         break;
                     case GameStage.boite_a_musique:
+                        AkSoundEngine.PostEvent("Amb_Forest", SoundFlower);
                         break;
                     case GameStage.fleurs:
+                        AkSoundEngine.PostEvent("SFX_Paper", SoundPicture);
                         break;
                     case GameStage.photo:
                         break;
@@ -76,6 +94,7 @@ public class SoundManager : Manager
                 break;
 
             case GameState.end:
+                AkSoundEngine.PostEvent("Game_End", SoundEnd);
                 ;
                 break;
         }
