@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
 
 
     //contient les différents manager
+    private LevelManager level_manager;
     private UIManager ui_manager;
     private SoundManager sound_manager;
     private static GameManager instance;
