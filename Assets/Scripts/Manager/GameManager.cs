@@ -62,6 +62,11 @@ public class GameManager : MonoBehaviour
         #endif
     }
 
+    public HapticSonar getHaptic()
+    {
+        return this.sonar;
+    }
+
     public void setStage(GameStage stage)
     {
         this.stage = stage;

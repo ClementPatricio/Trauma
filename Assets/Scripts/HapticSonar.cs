@@ -16,6 +16,11 @@ public class HapticSonar : MonoBehaviour
     private Vector2 sonarIntensity;
     
 
+    public GameObject getTarget()
+    {
+        return this.objectToFind;
+    }
+
     void Awake()
     {
         this.playerMovement = GetComponent<PlayerMovement>();

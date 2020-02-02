@@ -32,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
     Vector2 mouvement;
     Vector2 lookMove;
 
+
+    private GameObject focus;
     private bool interacting;
     private float interactTime;
     [SerializeField]
@@ -84,13 +86,14 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
+            
             if (context.started && interacting && interactTime > holdingTime)
             {
                 OnInteract();
                 interacting = false;
                 interactTime = 0.0f;
                 filledInteraction.fillAmount = 0.0f;
-                interactionButton.fillAmount = 0.0f;
+                //interactionButton.fillAmount = 0.0f;
 
             }
             else
@@ -100,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
                     interacting = false;
                     interactTime = 0.0f;
                     filledInteraction.fillAmount = 0.0f;
-                    interactionButton.fillAmount = 0.0f;
+                    //interactionButton.fillAmount = 0.0f;
 
                 }
             }
@@ -109,7 +112,8 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnInteract()
     {
-
+        filledInteraction.fillAmount = 0.0f;
+        interactionButton.fillAmount = 0.0f;
         GameManager.getInstance().setState(GameState.souvenir);
         Debug.Log("c");
 
@@ -117,17 +121,27 @@ public class PlayerMovement : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        focus = other.gameObject;
         interacting = false;
         interactTime = 0.0f;
         filledInteraction.fillAmount = 0.0f;
-        interactionButton.fillAmount = 0.0f;
-        this.canInteract = true;
+        HapticSonar sonar = GameManager.getInstance().getHaptic();
+        if (sonar.getTarget() == focus)
+        {
+            interactionButton.fillAmount = 1.0f;
+            this.canInteract = true;
+        }
+        else
+        {
+            this.canInteract = false;
+        }
         Debug.Log("c");
 
     }
 
     void OnTriggerExit(Collider other)
     {
+        focus = null;
         interacting = false;
         interactTime = 0.0f;
         filledInteraction.fillAmount = 0.0f;
