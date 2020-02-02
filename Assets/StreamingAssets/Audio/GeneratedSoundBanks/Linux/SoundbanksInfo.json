@@ -14,16 +14,52 @@
   "DialogueEvents": [],
   "StreamedFiles": [
    {
+    "Id": "187434340",
+    "Language": "SFX",
+    "ShortName": "Pad_Draw.wav",
+    "Path": "SFX\\Pad_Draw_C42B8C3C.wem"
+   },
+   {
     "Id": "376664486",
     "Language": "SFX",
     "ShortName": "Musique_End.wav",
     "Path": "SFX\\Musique_End_C42B8C3C.wem"
    },
    {
+    "Id": "412050643",
+    "Language": "SFX",
+    "ShortName": "Game_Intro.wav",
+    "Path": "SFX\\Game_Intro_C42B8C3C.wem"
+   },
+   {
     "Id": "467330099",
     "Language": "SFX",
     "ShortName": "Ambience_Forest.wav",
     "Path": "SFX\\Ambience_Forest_C42B8C3C.wem"
+   },
+   {
+    "Id": "660604617",
+    "Language": "SFX",
+    "ShortName": "Pad_Haptique.wav",
+    "Path": "SFX\\Pad_Haptique_C42B8C3C.wem"
+   },
+   {
+    "Id": "684769557",
+    "Language": "SFX",
+    "ShortName": "Pad_Flowers.wav",
+    "Path": "SFX\\Pad_Flowers_C42B8C3C.wem"
+   },
+   {
+    "Id": "821362040",
+    "Language": "SFX",
+    "ShortName": "Pad_MusicBox.wav",
+    "Path": "SFX\\Pad_MusicBox_C42B8C3C.wem"
+   },
+   {
+    "Id": "990673102",
+    "Language": "SFX",
+    "ShortName": "Pad_Fireplace.wav",
+    "Path": "SFX\\Pad_Fireplace_C42B8C3C.wem"
    }
   ],
   "MediaFilesNotInAnyBank": [],
@@ -49,7 +85,6 @@
       "Name": "Amb_Forest",
       "ObjectPath": "\\Events\\Default Work Unit\\Ambience\\Amb_Forest",
       "GUID": "{3162FA40-A009-4A87-B187-6FDBBCB6E963}",
-      "MaxAttenuation": "100.000000",
       "DurationType": "Infinite"
      },
      {
@@ -74,10 +109,7 @@
       "Name": "Game_Intro",
       "ObjectPath": "\\Events\\Default Work Unit\\GameState\\Game_Intro",
       "GUID": "{5DCA596C-6B3F-456A-B0D9-1A1C506650BD}",
-      "MaxAttenuation": "0.000000",
-      "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
+      "DurationType": "Infinite"
      },
      {
       "Id": "3645673277",
@@ -145,10 +177,28 @@
     ],
     "ReferencedStreamedFiles": [
      {
+      "Id": "187434340"
+     },
+     {
       "Id": "376664486"
      },
      {
+      "Id": "412050643"
+     },
+     {
       "Id": "467330099"
+     },
+     {
+      "Id": "660604617"
+     },
+     {
+      "Id": "684769557"
+     },
+     {
+      "Id": "821362040"
+     },
+     {
+      "Id": "990673102"
      }
     ],
     "IncludedMemoryFiles": [
@@ -177,12 +227,6 @@
       "Path": "SFX\\Mus_Layer_2_C42B8C3C.wem"
      },
      {
-      "Id": "187434340",
-      "Language": "SFX",
-      "ShortName": "Pad_Draw.wav",
-      "Path": "SFX\\Pad_Draw_C42B8C3C.wem"
-     },
-     {
       "Id": "266438315",
       "Language": "SFX",
       "ShortName": "Paper_01.wav",
@@ -205,6 +249,13 @@
       "Language": "SFX",
       "ShortName": "Mus_Layer_1.wav",
       "Path": "SFX\\Mus_Layer_1_C42B8C3C.wem"
+     },
+     {
+      "Id": "412050643",
+      "Language": "SFX",
+      "ShortName": "Game_Intro.wav",
+      "Path": "SFX\\Game_Intro_C42B8C3C.wem",
+      "PrefetchSize": "6163"
      },
      {
       "Id": "417362420",
@@ -231,6 +282,12 @@
       "Path": "SFX\\Transition_Musique_66C02B12.wem"
      },
      {
+      "Id": "604257121",
+      "Language": "SFX",
+      "ShortName": "Transition_Draw.wav",
+      "Path": "SFX\\Transition_Draw_66C02B12.wem"
+     },
+     {
       "Id": "604695064",
       "Language": "SFX",
       "ShortName": "Fire_Spark.wav",
@@ -249,22 +306,10 @@
       "Path": "SFX\\Fire_Main_C42B8C3C.wem"
      },
      {
-      "Id": "660604617",
-      "Language": "SFX",
-      "ShortName": "Pad_Haptique.wav",
-      "Path": "SFX\\Pad_Haptique_C42B8C3C.wem"
-     },
-     {
       "Id": "723455839",
       "Language": "SFX",
       "ShortName": "Kids_06.wav",
       "Path": "SFX\\Kids_06_66C02B12.wem"
-     },
-     {
-      "Id": "821362040",
-      "Language": "SFX",
-      "ShortName": "Pad_MusicBox.wav",
-      "Path": "SFX\\Pad_MusicBox_C42B8C3C.wem"
      },
      {
       "Id": "822758811",
@@ -279,16 +324,16 @@
       "Path": "SFX\\Kids_05_66C02B12.wem"
      },
      {
+      "Id": "931183108",
+      "Language": "SFX",
+      "ShortName": "Transition_Flowers.wav",
+      "Path": "SFX\\Transition_Flowers_66C02B12.wem"
+     },
+     {
       "Id": "943614182",
       "Language": "SFX",
       "ShortName": "Transition_fire.wav",
       "Path": "SFX\\Transition_fire_66C02B12.wem"
-     },
-     {
-      "Id": "990673102",
-      "Language": "SFX",
-      "ShortName": "Pad_Fireplace.wav",
-      "Path": "SFX\\Pad_Fireplace_C42B8C3C.wem"
      },
      {
       "Id": "1046207269",
