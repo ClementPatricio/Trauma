@@ -101,8 +101,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\GameState\\Game_End",
       "GUID": "{4CA14157-6507-4C02-9FAE-744E73DDAEC0}",
       "DurationType": "OneShot",
-      "DurationMin": "60.166687",
-      "DurationMax": "60.166687"
+      "DurationMin": "59.366688",
+      "DurationMax": "59.366688"
      },
      {
       "Id": "387455016",
@@ -203,6 +203,12 @@
     ],
     "IncludedMemoryFiles": [
      {
+      "Id": "9290926",
+      "Language": "SFX",
+      "ShortName": "Transition_Haptique.wav",
+      "Path": "SFX\\Transition_Haptique_D02A26E9.wem"
+     },
+     {
       "Id": "72661833",
       "Language": "SFX",
       "ShortName": "Kids_02.wav",
@@ -274,6 +280,12 @@
       "Language": "SFX",
       "ShortName": "Kids_03.wav",
       "Path": "SFX\\Kids_03_66C02B12.wem"
+     },
+     {
+      "Id": "553597582",
+      "Language": "SFX",
+      "ShortName": "Transition_End.wav",
+      "Path": "SFX\\Transition_End_AA889A9E.wem"
      },
      {
       "Id": "600290729",

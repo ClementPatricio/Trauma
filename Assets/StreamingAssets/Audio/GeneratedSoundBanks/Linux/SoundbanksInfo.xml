@@ -56,7 +56,7 @@
 			<IncludedEvents>
 				<Event Id="1006024461" Name="Amb_Forest" ObjectPath="\Events\Default Work Unit\Ambience\Amb_Forest" GUID="{3162FA40-A009-4A87-B187-6FDBBCB6E963}" DurationType="Infinite"/>
 				<Event Id="814782759" Name="Amb_LFO_Sound" ObjectPath="\Events\Default Work Unit\Ambience\Amb_LFO_Sound" GUID="{6AA964B0-8660-4028-9AC6-5523240515D4}" MaxAttenuation="30.000000" DurationType="Infinite"/>
-				<Event Id="3271665593" Name="Game_End" ObjectPath="\Events\Default Work Unit\GameState\Game_End" GUID="{4CA14157-6507-4C02-9FAE-744E73DDAEC0}" DurationType="OneShot" DurationMin="60.166687" DurationMax="60.166687"/>
+				<Event Id="3271665593" Name="Game_End" ObjectPath="\Events\Default Work Unit\GameState\Game_End" GUID="{4CA14157-6507-4C02-9FAE-744E73DDAEC0}" DurationType="OneShot" DurationMin="59.366688" DurationMax="59.366688"/>
 				<Event Id="387455016" Name="Game_Intro" ObjectPath="\Events\Default Work Unit\GameState\Game_Intro" GUID="{5DCA596C-6B3F-456A-B0D9-1A1C506650BD}" DurationType="Infinite"/>
 				<Event Id="3645673277" Name="Music_MusicBox" ObjectPath="\Events\Default Work Unit\Music\Music_MusicBox" GUID="{FD34EA23-7298-4CF3-89D2-EABF8C0B7186}" DurationType="Infinite"/>
 				<Event Id="3456893342" Name="Music_Stop_Mechanic" ObjectPath="\Events\Default Work Unit\Music\Music_Stop_Mechanic" GUID="{5BBDDA35-ABD5-4A52-9B77-8CC43734B8E7}" DurationType="OneShot" DurationMin="0.526236" DurationMax="0.526236"/>
@@ -78,6 +78,10 @@
 				<File Id="990673102"/>
 			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
+				<File Id="9290926" Language="SFX">
+					<ShortName>Transition_Haptique.wav</ShortName>
+					<Path>SFX\Transition_Haptique_D02A26E9.wem</Path>
+				</File>
 				<File Id="72661833" Language="SFX">
 					<ShortName>Kids_02.wav</ShortName>
 					<Path>SFX\Kids_02_66C02B12.wem</Path>
@@ -126,6 +130,10 @@
 				<File Id="534428630" Language="SFX">
 					<ShortName>Kids_03.wav</ShortName>
 					<Path>SFX\Kids_03_66C02B12.wem</Path>
+				</File>
+				<File Id="553597582" Language="SFX">
+					<ShortName>Transition_End.wav</ShortName>
+					<Path>SFX\Transition_End_AA889A9E.wem</Path>
 				</File>
 				<File Id="600290729" Language="SFX">
 					<ShortName>Transition_Musique.wav</ShortName>
