@@ -140,9 +140,7 @@
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\SFX_CatMwe",
       "GUID": "{857B14AA-5674-4EEA-BDDC-D0C7A14EF72B}",
       "MaxAttenuation": "100.000000",
-      "DurationType": "OneShot",
-      "DurationMin": "0.836569",
-      "DurationMax": "0.836569"
+      "DurationType": "Infinite"
      },
      {
       "Id": "1773688879",
@@ -206,7 +204,7 @@
       "Id": "9290926",
       "Language": "SFX",
       "ShortName": "Transition_Haptique.wav",
-      "Path": "SFX\\Transition_Haptique_D02A26E9.wem"
+      "Path": "SFX\\Transition_Haptique_122E60B5.wem"
      },
      {
       "Id": "72661833",
@@ -285,7 +283,7 @@
       "Id": "553597582",
       "Language": "SFX",
       "ShortName": "Transition_End.wav",
-      "Path": "SFX\\Transition_End_AA889A9E.wem"
+      "Path": "SFX\\Transition_End_B3A52943.wem"
      },
      {
       "Id": "600290729",

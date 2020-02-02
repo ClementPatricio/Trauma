@@ -35,7 +35,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	3216246379	Space_Dreaming	Wwise RoomVerb			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	9290926	Transition_Haptique	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Linux\SFX\Transition_Haptique_D02A26E9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition\Transitition_End\Transition_Haptique		69101
+	9290926	Transition_Haptique	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Linux\SFX\Transition_Haptique_122E60B5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition\Transitition_End\Transition_Haptique		69101
 	72661833	Kids_02	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Linux\SFX\Kids_02_66C02B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Kids\Kids_02		87886
 	83078971	Mus_Stop	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Linux\SFX\Mus_Stop_607D541F.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Music_Stop\Mus_Stop		30406
 	112297882	Lfo_Sound	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Linux\SFX\Lfo_Sound_09C5B4C0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Sound_LFO\Lfo_Sound		837645
@@ -48,7 +48,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	417362420	Kids_01	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Linux\SFX\Kids_01_66C02B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Kids\Kids_01		74587
 	520502441	Kids_04	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Linux\SFX\Kids_04_66C02B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Kids\Kids_04		95900
 	534428630	Kids_03	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Linux\SFX\Kids_03_66C02B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Kids\Kids_03		87983
-	553597582	Transition_End	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Linux\SFX\Transition_End_AA889A9E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition\Transitition_End\Transition_End		158368
+	553597582	Transition_End	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Linux\SFX\Transition_End_B3A52943.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition\Transitition_End\Transition_End		158368
 	600290729	Transition_Musique	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Linux\SFX\Transition_Musique_66C02B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition\Transition_Music\Transition_Musique		101066
 	604257121	Transition_Draw	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Linux\SFX\Transition_Draw_66C02B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition\Transition_Draw\Transition_Draw		59135
 	604695064	Fire_Spark	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Linux\SFX\Fire_Spark_C42B8C3C.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Fire\Fire_Spark		1175595
