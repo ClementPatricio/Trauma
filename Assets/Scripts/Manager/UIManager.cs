@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : Manager
 {
-    GameObject HUD;
+    Canvas canvas;
+    Image im;
+    Render render;
 
     private static UIManager instance;
     public static UIManager getInstance()
@@ -22,6 +25,14 @@ public class UIManager : Manager
         {
             Destroy(gameObject); ;
         }
+    }
+
+    void Start()
+    {
+        canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        im = GameObject.Find("Screen").GetComponent<Image>();
+        render = GameObject.Find("Camera").GetComponent<Render>();
+
     }
 
     override
@@ -51,6 +62,7 @@ public class UIManager : Manager
     public void TraitementIntro()
     {
         //ici gestion de l'intro
+        //Shader a gérer ici
         
     }
 
@@ -89,11 +101,7 @@ public class UIManager : Manager
         //gestion cinématique de fin
     }
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
+    
 
     // Update is called once per frame
     void Update()
@@ -126,16 +134,32 @@ public class UIManager : Manager
         switch (state)
         {
             case GameState.intro:
-                ;
+                canvas.enabled = true;
                 break;
             case GameState.play:
-                ;
+                canvas.enabled = false;
                 break;
             case GameState.transition:
-                ;
+                canvas.enabled = false;
                 break;
             case GameState.souvenir:
-                ;
+                switch (GameManager.getInstance().getStage())
+                {
+                    case GameStage.chat:
+                        im = Resources.Load<>
+                        break;
+                    case GameStage.cheminee:
+                        break;
+                    case GameStage.dessin:
+                        break;
+                    case GameStage.boite_a_musique:
+                        break;
+                    case GameStage.fleurs:
+                        break;
+                    case GameStage.photo:
+                        break;
+                }
+                canvas.enabled = true;
                 break;
 
             case GameState.end:
