@@ -4,9 +4,22 @@ using UnityEngine;
 
 public class SoundManager : Manager
 {
+    private static SoundManager instance;
+    public static SoundManager getInstance()
+    {
+        return instance;
+    }
+
     void Awake()
     {
-
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject); ;
+        }
     }
     // Use this for initialization
     void Start()

@@ -9,7 +9,6 @@ public class LevelManager : Manager {
     private static LevelManager instance;
     public static LevelManager getInstance()
     {
-        //ou instantie si n'existe pas ?
         return instance;
     }
 
