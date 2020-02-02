@@ -14,6 +14,12 @@
   "DialogueEvents": [],
   "StreamedFiles": [
    {
+    "Id": "376664486",
+    "Language": "SFX",
+    "ShortName": "Musique_End.wav",
+    "Path": "SFX\\Musique_End_C42B8C3C.wem"
+   },
+   {
     "Id": "467330099",
     "Language": "SFX",
     "ShortName": "Ambience_Forest.wav",
@@ -59,10 +65,9 @@
       "Name": "Game_End",
       "ObjectPath": "\\Events\\Default Work Unit\\GameState\\Game_End",
       "GUID": "{4CA14157-6507-4C02-9FAE-744E73DDAEC0}",
-      "MaxAttenuation": "0.000000",
       "DurationType": "OneShot",
-      "DurationMin": "0.000000",
-      "DurationMax": "0.000000"
+      "DurationMin": "60.166687",
+      "DurationMax": "60.166687"
      },
      {
       "Id": "387455016",
@@ -112,7 +117,6 @@
       "Name": "SFX_Draw",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\SFX_Draw",
       "GUID": "{3FD49C46-47D8-438D-ABD5-B69C79BD718B}",
-      "MaxAttenuation": "100.000000",
       "DurationType": "Infinite"
      },
      {
@@ -141,6 +145,9 @@
     ],
     "ReferencedStreamedFiles": [
      {
+      "Id": "376664486"
+     },
+     {
       "Id": "467330099"
      }
     ],
@@ -168,6 +175,12 @@
       "Language": "SFX",
       "ShortName": "Mus_Layer_2.wav",
       "Path": "SFX\\Mus_Layer_2_C42B8C3C.wem"
+     },
+     {
+      "Id": "187434340",
+      "Language": "SFX",
+      "ShortName": "Pad_Draw.wav",
+      "Path": "SFX\\Pad_Draw_C42B8C3C.wem"
      },
      {
       "Id": "266438315",

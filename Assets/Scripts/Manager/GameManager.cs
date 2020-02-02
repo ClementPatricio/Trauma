@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
 
 
     //contient les différents manager
+    private LevelManager level_manager;
     private UIManager ui_manager;
     private SoundManager sound_manager;
     private static GameManager instance;
@@ -27,6 +28,8 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
+        
+        level_manager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
         ui_manager = GameObject.Find("UIManager").GetComponent<UIManager>();
         sound_manager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         if (instance == null)

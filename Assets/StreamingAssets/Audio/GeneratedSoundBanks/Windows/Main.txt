@@ -37,6 +37,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	83078971	Mus_Stop	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Windows\SFX\Mus_Stop_607D541F.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Music_Stop\Mus_Stop		30406
 	112297882	Lfo_Sound	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Windows\SFX\Lfo_Sound_09C5B4C0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Sound_LFO\Lfo_Sound		837645
 	134437167	Mus_Layer_2	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Windows\SFX\Mus_Layer_2_C42B8C3C.wem		\Interactive Music Hierarchy\Default Work Unit\MusicBox\MusicBox_02\MusicBox_02\Mus_Layer_2		294107
+	187434340	Pad_Draw	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Windows\SFX\Pad_Draw_C42B8C3C.wem		\Interactive Music Hierarchy\Default Work Unit\Draw\Pad_Draw\Pad_Draw		3491066
 	266438315	Paper_01	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Windows\SFX\Paper_01_66C02B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Paper\Paper_01		16293
 	276555120	Transition_Haptique	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Windows\SFX\Transition_Haptique_66C02B12.wem		\Actor-Mixer Hierarchy\Default Work Unit\Transition\Transition_Begin\Transition_Haptique		87494
 	316245871	Cat	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Windows\SFX\Cat_03_82793208.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\Cat\Cat		43004
@@ -58,5 +59,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1046207269	Test	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Windows\SFX\PM_BB_DI_1_115BPM_Dmin_C_C42B8C3C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Test		1377231
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
+	376664486	Musique_End	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Windows\SFX\Musique_End_C42B8C3C.wem	376664486.wem	\Interactive Music Hierarchy\Default Work Unit\Music_End\Music_End\Musique_End	
 	467330099	Ambience_Forest	C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\.cache\Windows\SFX\Ambience_Forest_C42B8C3C.wem	467330099.wem	\Actor-Mixer Hierarchy\Default Work Unit\Amb\Amb_Forest\Ambience_Forest	
 

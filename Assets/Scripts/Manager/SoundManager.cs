@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class SoundManager : Manager
 {
+<<<<<<< HEAD
     private static SoundManager instance;
+=======
+
+    private static SoundManager instance;
+
+
+>>>>>>> master
     public GameObject SoundIntro;
 
     public GameObject SoundCat;
@@ -16,6 +23,10 @@ public class SoundManager : Manager
 
     public GameObject SoundEnd;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
     public static SoundManager getInstance()
     {
         return instance;
