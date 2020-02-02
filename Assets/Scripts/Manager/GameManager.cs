@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 //phase de controle du systeme
 public enum GameState { intro, play, transition, souvenir , end };
@@ -30,6 +31,7 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
+        
         level_manager = GameObject.Find("LevelManager").GetComponent<LevelManager>();
         ui_manager = GameObject.Find("UIManager").GetComponent<UIManager>();
         sound_manager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
