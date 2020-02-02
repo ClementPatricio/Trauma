@@ -11,10 +11,15 @@ public class Render : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        mat = new Material(Shader.Find("Shaders/ShaderTestDeux"));
+        changeShader("ShaderTestDeux");
         //Debug.Log("Resolution "+Screen.currentResolution);
         mat.SetFloat("height", Screen.currentResolution.height);
         mat.SetFloat("width", Screen.currentResolution.width);
+    }
+
+    public void changeShader(string name)
+    {
+        mat = new Material(Shader.Find("Shaders/"+name));
     }
 
     private void OnRenderImage(RenderTexture source, RenderTexture destination)
@@ -37,3 +42,4 @@ public class Render : MonoBehaviour
         //mat.SetFloat("time", Mathf.Sin(Time.realtimeSinceStartup*40.0f));
     }
 }
+

@@ -5,13 +5,24 @@ using UnityEngine;
 
 public class ControlerManager : Manager{
 
-
-
-
+    private static ControlerManager instance;
+    public static ControlerManager getInstance()
+    {
+        return instance;
+    }
 
     void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject); ;
+        }
     }
+
     // Use this for initialization
     void Start () {
     }

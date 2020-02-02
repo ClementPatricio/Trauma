@@ -8,7 +8,12 @@
 		<ExternalSourcesOutputRoot>C:\Users\ELE5d5ab19ee5329\Documents\WwiseProjects\WwiseGlobalGameJam20.git\trunk\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles/>
+	<StreamedFiles>
+		<File Id="467330099" Language="SFX">
+			<ShortName>Ambience_Forest.wav</ShortName>
+			<Path>SFX\Ambience_Forest_C42B8C3C.wem</Path>
+		</File>
+	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
 		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX">
@@ -21,13 +26,27 @@
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1006024461" Name="Amb_Forest" ObjectPath="\Events\Default Work Unit\Ambience\Amb_Forest" GUID="{3162FA40-A009-4A87-B187-6FDBBCB6E963}" MaxAttenuation="100.000000" DurationType="Infinite"/>
 				<Event Id="814782759" Name="Amb_LFO_Sound" ObjectPath="\Events\Default Work Unit\Ambience\Amb_LFO_Sound" GUID="{6AA964B0-8660-4028-9AC6-5523240515D4}" MaxAttenuation="30.000000" DurationType="Infinite"/>
-				<Event Id="3645673277" Name="Music_MusicBox" ObjectPath="\Events\Default Work Unit\Music\Music_MusicBox" GUID="{FD34EA23-7298-4CF3-89D2-EABF8C0B7186}" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="3271665593" Name="Game_End" ObjectPath="\Events\Default Work Unit\GameState\Game_End" GUID="{4CA14157-6507-4C02-9FAE-744E73DDAEC0}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="387455016" Name="Game_Intro" ObjectPath="\Events\Default Work Unit\GameState\Game_Intro" GUID="{5DCA596C-6B3F-456A-B0D9-1A1C506650BD}" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3645673277" Name="Music_MusicBox" ObjectPath="\Events\Default Work Unit\Music\Music_MusicBox" GUID="{FD34EA23-7298-4CF3-89D2-EABF8C0B7186}" DurationType="Infinite"/>
 				<Event Id="3456893342" Name="Music_Stop_Mechanic" ObjectPath="\Events\Default Work Unit\Music\Music_Stop_Mechanic" GUID="{5BBDDA35-ABD5-4A52-9B77-8CC43734B8E7}" DurationType="OneShot" DurationMin="0.526236" DurationMax="0.526236"/>
-				<Event Id="2540328137" Name="SFX_Fire" ObjectPath="\Events\Default Work Unit\SFX\SFX_Fire" GUID="{ED31354C-9C83-48E4-AA78-35F92432894C}" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="481770683" Name="SFX_Cat" ObjectPath="\Events\Default Work Unit\SFX\SFX_Cat" GUID="{66BBA989-C85B-4754-9B24-04CB8593F907}" DurationType="Infinite"/>
+				<Event Id="1934911244" Name="SFX_CatMwe" ObjectPath="\Events\Default Work Unit\SFX\SFX_CatMwe" GUID="{857B14AA-5674-4EEA-BDDC-D0C7A14EF72B}" MaxAttenuation="100.000000" DurationType="OneShot" DurationMin="0.836569" DurationMax="0.836569"/>
+				<Event Id="1773688879" Name="SFX_Draw" ObjectPath="\Events\Default Work Unit\SFX\SFX_Draw" GUID="{3FD49C46-47D8-438D-ABD5-B69C79BD718B}" MaxAttenuation="100.000000" DurationType="Infinite"/>
+				<Event Id="2540328137" Name="SFX_Fire" ObjectPath="\Events\Default Work Unit\SFX\SFX_Fire" GUID="{ED31354C-9C83-48E4-AA78-35F92432894C}" DurationType="Infinite"/>
+				<Event Id="3124573721" Name="SFX_Paper" ObjectPath="\Events\Default Work Unit\SFX\SFX_Paper" GUID="{009DB541-5A47-4EDA-874B-3F7C73984F0A}" DurationType="OneShot" DurationMin="0.335805" DurationMax="0.394195"/>
 				<Event Id="3157003241" Name="Test" ObjectPath="\Events\Default Work Unit\Test" GUID="{EB72A4F4-25F0-4AD0-B6FA-CB5F7F442056}" DurationType="Infinite"/>
 			</IncludedEvents>
+			<ReferencedStreamedFiles>
+				<File Id="467330099"/>
+			</ReferencedStreamedFiles>
 			<IncludedMemoryFiles>
+				<File Id="72661833" Language="SFX">
+					<ShortName>Kids_02.wav</ShortName>
+					<Path>SFX\Kids_02_66C02B12.wem</Path>
+				</File>
 				<File Id="83078971" Language="SFX">
 					<ShortName>Mus_Stop.wav</ShortName>
 					<Path>SFX\Mus_Stop_607D541F.wem</Path>
@@ -40,9 +59,37 @@
 					<ShortName>Mus_Layer_2.wav</ShortName>
 					<Path>SFX\Mus_Layer_2_C42B8C3C.wem</Path>
 				</File>
+				<File Id="266438315" Language="SFX">
+					<ShortName>Paper_01.wav</ShortName>
+					<Path>SFX\Paper_01_66C02B12.wem</Path>
+				</File>
+				<File Id="276555120" Language="SFX">
+					<ShortName>Transition_Haptique.wav</ShortName>
+					<Path>SFX\Transition_Haptique_66C02B12.wem</Path>
+				</File>
+				<File Id="316245871" Language="SFX">
+					<ShortName>Cat_03.wav</ShortName>
+					<Path>SFX\Cat_03_82793208.wem</Path>
+				</File>
 				<File Id="368898759" Language="SFX">
 					<ShortName>Mus_Layer_1.wav</ShortName>
 					<Path>SFX\Mus_Layer_1_C42B8C3C.wem</Path>
+				</File>
+				<File Id="417362420" Language="SFX">
+					<ShortName>Kids_01.wav</ShortName>
+					<Path>SFX\Kids_01_66C02B12.wem</Path>
+				</File>
+				<File Id="520502441" Language="SFX">
+					<ShortName>Kids_04.wav</ShortName>
+					<Path>SFX\Kids_04_66C02B12.wem</Path>
+				</File>
+				<File Id="534428630" Language="SFX">
+					<ShortName>Kids_03.wav</ShortName>
+					<Path>SFX\Kids_03_66C02B12.wem</Path>
+				</File>
+				<File Id="600290729" Language="SFX">
+					<ShortName>Transition_Musique.wav</ShortName>
+					<Path>SFX\Transition_Musique_66C02B12.wem</Path>
 				</File>
 				<File Id="604695064" Language="SFX">
 					<ShortName>Fire_Spark.wav</ShortName>
@@ -55,6 +102,34 @@
 				<File Id="617567950" Language="SFX">
 					<ShortName>Fire_Main.wav</ShortName>
 					<Path>SFX\Fire_Main_C42B8C3C.wem</Path>
+				</File>
+				<File Id="660604617" Language="SFX">
+					<ShortName>Pad_Haptique.wav</ShortName>
+					<Path>SFX\Pad_Haptique_C42B8C3C.wem</Path>
+				</File>
+				<File Id="723455839" Language="SFX">
+					<ShortName>Kids_06.wav</ShortName>
+					<Path>SFX\Kids_06_66C02B12.wem</Path>
+				</File>
+				<File Id="821362040" Language="SFX">
+					<ShortName>Pad_MusicBox.wav</ShortName>
+					<Path>SFX\Pad_MusicBox_C42B8C3C.wem</Path>
+				</File>
+				<File Id="822758811" Language="SFX">
+					<ShortName>Paper_02.wav</ShortName>
+					<Path>SFX\Paper_02_66C02B12.wem</Path>
+				</File>
+				<File Id="918210170" Language="SFX">
+					<ShortName>Kids_05.wav</ShortName>
+					<Path>SFX\Kids_05_66C02B12.wem</Path>
+				</File>
+				<File Id="943614182" Language="SFX">
+					<ShortName>Transition_fire.wav</ShortName>
+					<Path>SFX\Transition_fire_66C02B12.wem</Path>
+				</File>
+				<File Id="990673102" Language="SFX">
+					<ShortName>Pad_Fireplace.wav</ShortName>
+					<Path>SFX\Pad_Fireplace_C42B8C3C.wem</Path>
 				</File>
 				<File Id="1046207269" Language="SFX">
 					<ShortName>PM_BB_DI_1_115BPM_Dmin_C.wav</ShortName>

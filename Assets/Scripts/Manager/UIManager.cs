@@ -1,15 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : Manager
 {
-    GameObject HUD;
+    Canvas canvas;
+    Image im;
+    Render render;
 
     private static UIManager instance;
     public static UIManager getInstance()
     {
-        //ou instantie si n'existe pas ?
         return instance;
     }
 
@@ -23,6 +25,13 @@ public class UIManager : Manager
         {
             Destroy(gameObject); ;
         }
+    }
+
+    void Start()
+    {
+        canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
+        im = GameObject.Find("Screen").GetComponent<Image>();
+        render = GameObject.Find("Camera").GetComponent<Render>();
     }
 
     override
@@ -52,6 +61,8 @@ public class UIManager : Manager
     public void TraitementIntro()
     {
         //ici gestion de l'intro
+        //Shader a gérer ici ou juste Canvas
+        
     }
 
     override
@@ -89,11 +100,7 @@ public class UIManager : Manager
         //gestion cinématique de fin
     }
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
+    
 
     // Update is called once per frame
     void Update()
@@ -126,16 +133,63 @@ public class UIManager : Manager
         switch (state)
         {
             case GameState.intro:
-                ;
+                canvas.enabled = true;
                 break;
             case GameState.play:
-                ;
+                canvas.enabled = false;
+                switch (GameManager.getInstance().getStage())
+                {
+                    case GameStage.chat:
+                        render.changeShader("NoVision");
+                        //im = Resources.Load<Image>("");
+                        break;
+                    case GameStage.cheminee:
+                        //im = Resources.Load<Image>("");
+                        break;
+                    case GameStage.dessin:
+                        render.changeShader("VisionGrey");
+                        //im = Resources.Load<Image>("");
+                        break;
+                    case GameStage.boite_a_musique:
+                        //im = Resources.Load<Image>("");
+                        break;
+                    case GameStage.fleurs:
+                        //couper shader
+                        //activer post processing
+                        //render.changeShader("VisionCorrect");
+                        //im = Resources.Load<Image>("");
+                        break;
+                    case GameStage.photo:
+                        //im = Resources.Load<Image>("");
+                        break;
+                }
                 break;
             case GameState.transition:
-                ;
+                canvas.enabled = false;
                 break;
             case GameState.souvenir:
-                ;
+                switch (GameManager.getInstance().getStage())
+                {
+                    case GameStage.chat:
+                        //im = Resources.Load<Image>("");
+                        break;
+                    case GameStage.cheminee:
+                        //im = Resources.Load<Image>("");
+                        break;
+                    case GameStage.dessin:
+                        //im = Resources.Load<Image>("");
+                        break;
+                    case GameStage.boite_a_musique:
+                        //im = Resources.Load<Image>("");
+                        break;
+                    case GameStage.fleurs:
+                        //im = Resources.Load<Image>("");
+                        break;
+                    case GameStage.photo:
+                        //im = Resources.Load<Image>("");
+                        break;
+                }
+                canvas.enabled = true;
                 break;
 
             case GameState.end:
