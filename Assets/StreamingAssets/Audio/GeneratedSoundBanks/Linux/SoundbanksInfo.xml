@@ -19,7 +19,7 @@
 		</File>
 		<File Id="412050643" Language="SFX">
 			<ShortName>Game_Intro.wav</ShortName>
-			<Path>SFX\Game_Intro_331D1B94.wem</Path>
+			<Path>SFX\Game_Intro_42794FDB.wem</Path>
 		</File>
 		<File Id="467330099" Language="SFX">
 			<ShortName>Ambience_Forest.wav</ShortName>
@@ -116,8 +116,8 @@
 				</File>
 				<File Id="412050643" Language="SFX">
 					<ShortName>Game_Intro.wav</ShortName>
-					<Path>SFX\Game_Intro_331D1B94.wem</Path>
-					<PrefetchSize>6011</PrefetchSize>
+					<Path>SFX\Game_Intro_42794FDB.wem</Path>
+					<PrefetchSize>5893</PrefetchSize>
 				</File>
 				<File Id="417362420" Language="SFX">
 					<ShortName>Kids_01.wav</ShortName>
