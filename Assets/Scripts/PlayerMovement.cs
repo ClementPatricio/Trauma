@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.Interactions;
-using UnityEngine.InputSystem.Editor;
-using UnityEngine.InputSystem.Controls;
+//using UnityEngine.InputSystem.Interactions;
+//using UnityEngine.InputSystem;
+//using UnityEngine.InputSystem.Controls;
 using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
