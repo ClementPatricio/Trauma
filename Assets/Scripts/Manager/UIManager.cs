@@ -7,7 +7,7 @@ using UnityEngine.Rendering.PostProcessing;
 public class UIManager : Manager
 {
     Canvas canvas;
-    Image im, im2,background;
+    Image im, im2,background,titre2;
     Render render;
     PostProcessVolume ppv;
     GameObject cam;
@@ -43,6 +43,9 @@ public class UIManager : Manager
         im2.enabled = false;
         cam = GameObject.Find("Main Camera");
         titre = GameObject.Find("Titre").GetComponent<Text>();
+        titre.enabled = false;
+        titre2 = GameObject.Find("Titre_Image").GetComponent<Image>();
+        titre2.color = new Color(titre2.color.r, titre2.color.g, titre2.color.b, 0.0f);
         ppv = cam.GetComponent<PostProcessVolume>();
         render = cam.GetComponent<Render>();
     }
@@ -82,14 +85,15 @@ public class UIManager : Manager
         {
             Color color = im.color;
             im.color = new Color(im.color.r - 0.005f, im.color.g - 0.005f, im.color.b - 0.005f, 1.0f);
-            if(tmp >= 7.0f && titre.color.a == 0.0f)
+            if(tmp >= 7.0f && titre2.color.a == 0.0f)
             {
-                titre.color = new Color(titre.color.r, titre.color.g, titre.color.b, 1.0f);
+                titre2.color = new Color(titre.color.r, titre.color.g, titre.color.b, 1.0f);
             }
         }
         else
         {
-            titre.enabled = false;
+            
+            //titre.enabled = false;
             im.color = new Color(1, 1, 1, 0);
             GameManager.getInstance().setState(GameState.transition);
         }
@@ -239,7 +243,7 @@ public class UIManager : Manager
             case GameState.intro:
                 up = true;
                 time = Time.realtimeSinceStartup;
-                titre.color = new Color(titre.color.r, titre.color.g, titre.color.b, 0.0f);
+                //titre.color = new Color(titre.color.r, titre.color.g, titre.color.b, 0.0f);
                 canvas.enabled = true;
                 render.shader_actif = false;
                 ppv.enabled = true;
@@ -303,9 +307,9 @@ public class UIManager : Manager
                     case GameStage.photo:
                         im.sprite = Resources.Load<Sprite>("Images/photo");
                         im2.sprite = Resources.Load<Sprite>("Images/photo_complete");
-                        im2.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                        im2.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
                         im2.enabled = true;
-                        background.enabled = true;
+                        //background.enabled = true;
                         break;
                 }
                 canvas.enabled = true;
@@ -323,8 +327,8 @@ public class UIManager : Manager
                 up = true;
 
                 //im.sprite = Resources.Load<Sprite>("Images/hopital");
-                titre.text = "Wake Up";
-                titre.enabled = true;
+                //titre.text = "Wake Up";
+                //titre.enabled = true;
                 titre.color = new Color(0.0f, 0.0f, 0.0f, 0.0f);
                 canvas.enabled = true;
                 time = Time.realtimeSinceStartup;

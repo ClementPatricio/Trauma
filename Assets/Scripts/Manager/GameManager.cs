@@ -45,13 +45,13 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        /*setStage(GameStage.accident);
-        setState(GameState.intro);*/
+        setStage(GameStage.accident);
+        setState(GameState.intro);
         sonar = player.GetComponent<HapticSonar>();
         sonar.setObjectToFind(objects[0]);
-        sonar.setObjectToFind(objects[4]);
+        /*sonar.setObjectToFind(objects[4]);
         setStage(GameStage.boite_a_musique);
-        setState(GameState.souvenir);
+        setState(GameState.souvenir);*/
     }
 
     public void Stop()
