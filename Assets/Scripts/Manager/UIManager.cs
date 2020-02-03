@@ -7,7 +7,7 @@ using UnityEngine.Rendering.PostProcessing;
 public class UIManager : Manager
 {
     Canvas canvas;
-    Image im;
+    Image im, im2,background;
     Render render;
     PostProcessVolume ppv;
     GameObject cam;
@@ -37,6 +37,10 @@ public class UIManager : Manager
         }
         canvas = GameObject.Find("Canvas").GetComponent<Canvas>();
         im = GameObject.Find("Screen").GetComponent<Image>();
+        im2 = GameObject.Find("Screen2").GetComponent<Image>();
+        background = GameObject.Find("Background").GetComponent<Image>();
+        background.enabled = false;
+        im2.enabled = false;
         cam = GameObject.Find("Main Camera");
         titre = GameObject.Find("Titre").GetComponent<Text>();
         ppv = cam.GetComponent<PostProcessVolume>();
@@ -104,6 +108,11 @@ public class UIManager : Manager
         }
         else
         {
+            if(GameManager.getInstance().getStage() == GameStage.photo)
+            {
+                Debug.Log("fondu");
+                im2.color = new Color(im2.color.r, im2.color.g, im2.color.b,1.0f - alpha);
+            }
             im.color = new Color(im.color.r, im.color.g, im.color.b, alpha);
             alpha -= 0.01f;
         }
@@ -135,21 +144,63 @@ public class UIManager : Manager
         //ici gestion de l'intro
         //Shader a gérer ici ou juste Canvas
         float tmp = Time.realtimeSinceStartup - time;
-        if (tmp < 10.0f)
+        if (tmp < 20.0f)
         {
             Color color = im.color;
-            if (color.r >= 0.0f)
+            if (up)
             {
-                im.color = new Color(im.color.r - 0.001f, im.color.g - 0.001f, im.color.b - 0.001f, 1.0f);
+                im.color = new Color(im.color.r, im.color.g, im.color.b, im.color.a +0.01f);
+                im2.color = new Color(im2.color.r, im2.color.g, im2.color.b, im2.color.a - 0.01f);
+                if(im2.color.a <= 0.0f)
+                {
+                    im2.sprite = Resources.Load<Sprite>("Images/hopital");
+                    up = false;
+                }
             }
-            if (tmp >= 7.0f && titre.color.a == 0.0f)
+            else
+            {
+                if (im2.color.a < 1.0f)
+                {
+                    im.color = new Color(im.color.r, im.color.g, im.color.b, im.color.a - 0.004f);
+                    im2.color = new Color(im2.color.r, im2.color.g, im2.color.b, im2.color.a + 0.004f);
+                }
+            }
+            /*if(color.a>= 1.0f)
+            {
+                if (im.rectTransform.localScale.x > 1.0f)
+                    im.rectTransform.localScale = new Vector3(im.rectTransform.localScale.x - 0.08f, im.rectTransform.localScale.y - 0.08f,1.0f);
+                else if(im.rectTransform.localScale.x < 1.0f)
+                {
+                    im.rectTransform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+                }
+                float x = 0.0f;
+                float y = 0.0f;
+                if (im.rectTransform.localPosition.x > 0.0f)
+                {
+                    x = -8.0f * 4.0f;
+                }
+                else if(im.rectTransform.localPosition.x < 0.0f)
+                {
+                    im.rectTransform.localPosition = new Vector3(0.0f, im.rectTransform.localPosition.y, 0.0f);
+                }
+                if(im.rectTransform.localPosition.y < 0.0f)
+                {
+                    y = 2.0f*4.0f;
+                }
+                else if(im.rectTransform.localPosition.y > 0.0f)
+                {
+                    im.rectTransform.localPosition = new Vector3(im.rectTransform.localPosition.x, 0.0f, 0.0f);
+                }
+                im.rectTransform.localPosition = new Vector3(im.rectTransform.localScale.x + x, im.rectTransform.localScale.y + y , 1.0f);
+            }*/
+            if (tmp >= 10.0f && titre.color.a == 0.0f)
             {
                 titre.color = new Color(titre.color.r, titre.color.g, titre.color.b, 1.0f);
             }
         }
         else
         {
-            GameManager.getInstance().setState(GameState.transition);
+            GameManager.getInstance().Stop();
         }
     }
 
@@ -251,14 +302,32 @@ public class UIManager : Manager
                         break;
                     case GameStage.photo:
                         im.sprite = Resources.Load<Sprite>("Images/photo");
+                        im2.sprite = Resources.Load<Sprite>("Images/photo_complete");
+                        im2.color = new Color(1.0f, 1.0f, 1.0f, 0.0f);
+                        im2.enabled = true;
+                        background.enabled = true;
                         break;
                 }
                 canvas.enabled = true;
                 break;
 
             case GameState.end:
-                im = Resources.Load<Image>("end");
+                im.sprite  = Resources.Load<Sprite>("Images/hopital");
+                //2975.3    -874
+                //5.8       5.8
+                im.color = new Color(im.color.r, im.color.g, im.color.b, 0.0f);
+                im.rectTransform.localPosition = new Vector3(2975.3f, -874.0f, 0.0f);
+                //im.rectTransform.position = new Vector3(2975.3f,-874.0f,0.0f);
+                im.rectTransform.localScale = new Vector3(5.8f, 5.8f, 0.0f);
+                //im2.sprite = Resources.Load<Sprite>("Images/hopital");
+                up = true;
+
+                //im.sprite = Resources.Load<Sprite>("Images/hopital");
+                titre.text = "Wake Up";
+                titre.enabled = true;
+                titre.color = new Color(0.0f, 0.0f, 0.0f, 0.0f);
                 canvas.enabled = true;
+                time = Time.realtimeSinceStartup;
                 break;
         }
     }

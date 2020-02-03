@@ -45,10 +45,13 @@ public class GameManager : MonoBehaviour
     }
     void Start()
     {
-        setStage(GameStage.accident);
-        setState(GameState.intro);
+        /*setStage(GameStage.accident);
+        setState(GameState.intro);*/
         sonar = player.GetComponent<HapticSonar>();
         sonar.setObjectToFind(objects[0]);
+        sonar.setObjectToFind(objects[4]);
+        setStage(GameStage.boite_a_musique);
+        setState(GameState.souvenir);
     }
 
     public void Stop()
@@ -85,29 +88,36 @@ public class GameManager : MonoBehaviour
                 case GameStage.accident:
                     setStage(GameStage.chat);
                     //sonar.setObjectToFind(objects[0]);
+                    setState(GameState.play);
                     break;
                 case GameStage.chat:
                     setStage(GameStage.cheminee);
                     sonar.setObjectToFind(objects[1]);
+                    setState(GameState.play);
                     break;
                 case GameStage.cheminee:
                     setStage(GameStage.dessin);
                     sonar.setObjectToFind(objects[2]);
+                    setState(GameState.play);
                     break;
                 case GameStage.dessin:
                     setStage(GameStage.boite_a_musique);
                     sonar.setObjectToFind(objects[3]);
+                    setState(GameState.play);
                     break;
                 case GameStage.boite_a_musique:
                     setStage(GameStage.fleurs);
                     sonar.setObjectToFind(objects[4]);
+                    setState(GameState.play);
                     break;
                 case GameStage.fleurs:
+                    setStage(GameStage.photo);
+                    setState(GameState.souvenir);
+                    break;
+                case GameStage.photo:
                     setState(GameState.end);
                     break;
             }
-            Debug.Log("Transition Play");
-            setState(GameState.play);
         }
     }
 
