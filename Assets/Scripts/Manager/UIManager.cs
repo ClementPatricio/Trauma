@@ -93,7 +93,7 @@ public class UIManager : Manager
         else
         {
             
-            //titre.enabled = false;
+            titre2.enabled = false;
             im.color = new Color(1, 1, 1, 0);
             GameManager.getInstance().setState(GameState.transition);
         }
