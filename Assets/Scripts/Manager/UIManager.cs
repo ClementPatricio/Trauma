@@ -7,15 +7,16 @@ using UnityEngine.Rendering.PostProcessing;
 public class UIManager : Manager
 {
     Canvas canvas;
-    Image im, im2,background,titre2;
+    Image im, im2, background, titre2,ground;
     Render render;
     PostProcessVolume ppv;
     GameObject cam;
+    int compteur;
     public float tmp_intro;
     public float tmp_titre;
     public float tmp_end;
-    public Text titre;
-    float time;
+    public Text titre,sous_titre;
+    float time,time2;
     bool up;
     float alpha = 0.0f;
 
@@ -40,10 +41,14 @@ public class UIManager : Manager
         im2 = GameObject.Find("Screen2").GetComponent<Image>();
         background = GameObject.Find("Background").GetComponent<Image>();
         background.enabled = false;
+        ground = GameObject.Find("Ground").GetComponent<Image>();
+        ground.enabled = false;
         im2.enabled = false;
         cam = GameObject.Find("Main Camera");
         titre = GameObject.Find("Titre").GetComponent<Text>();
         titre.enabled = false;
+        sous_titre = GameObject.Find("Sous-Titre").GetComponent<Text>();
+        sous_titre.enabled = false;
         titre2 = GameObject.Find("Titre_Image").GetComponent<Image>();
         titre2.color = new Color(titre2.color.r, titre2.color.g, titre2.color.b, 0.0f);
         ppv = cam.GetComponent<PostProcessVolume>();
@@ -148,7 +153,7 @@ public class UIManager : Manager
         //ici gestion de l'intro
         //Shader a gérer ici ou juste Canvas
         float tmp = Time.realtimeSinceStartup - time;
-        if (tmp < 20.0f)
+        if (tmp < 56.0f)
         {
             Color color = im.color;
             if (up)
@@ -197,9 +202,65 @@ public class UIManager : Manager
                 }
                 im.rectTransform.localPosition = new Vector3(im.rectTransform.localScale.x + x, im.rectTransform.localScale.y + y , 1.0f);
             }*/
-            if (tmp >= 10.0f && titre.color.a == 0.0f)
+            if (tmp >= 17.0f)
             {
-                titre.color = new Color(titre.color.r, titre.color.g, titre.color.b, 1.0f);
+                if (!titre.enabled)
+                {
+                    background.enabled = true;
+                    time2 = Time.realtimeSinceStartup;
+                    compteur = 0;
+                    titre.enabled = true;
+                    sous_titre.enabled = true;
+                    titre.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+                    sous_titre.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+                }
+                switch (compteur)
+                {
+                    case 0:
+                        //titre.text = "Jad BERRADA\nProject Management - 3D Assets";
+                        titre.text = "Jad BERRADA\n";
+                        sous_titre.text = "\nProject Management - 3D Assets";
+                        break;
+                    case 1:
+                        //titre.text = "Pierre-Henri HEURTE\nGame/Level Design - 3D Assets";
+                        titre.text = "Pierre-Henri HEURTE\n";
+                        sous_titre.text = "\nGame/Level Design - 3D Assets";
+                        break;
+                    case 2:
+                        //titre.text = "Elise MALBEC\nIllustrations";
+                        titre.text = "Elise MALBEC\n";
+                        sous_titre.text = "\nIllustrations";
+                        break;
+                    case 3:
+                        //titre.text = "Clément PATRICIO\nProgramming";
+                        titre.text = "Clément PATRICIO\n";
+                        sous_titre.text = "\nProgramming";
+                        break;
+                    case 4:
+                        //titre.text = "Terry PEREZ-GERVAIS\nMusic & Sound Design";
+                        titre.text = "Terry PEREZ-GERVAIS\n";
+                        sous_titre.text = "\nMusic & Sound Design";
+                        break;
+                    case 5:
+                        //titre.text = "Théa TREVIGNON\nProject Management - 3D Assets";
+                        titre.text = "Théa TREVIGNON\n";
+                        sous_titre.text = "\nProject Management - 3D Assets";
+                        break;
+                    case 6:
+                        //titre.text = "Julien VANDERHAEGEN\nProgramming";
+                        titre.text = "Julien VANDERHAEGEN\n";
+                        sous_titre.text = "\nProgramming";
+                        break;
+                    default:
+                        titre.text = "";
+                        sous_titre.text = "";
+                        break;
+                }
+                if(Time.realtimeSinceStartup - time2 > 6.0f)
+                {
+                    time2 = Time.realtimeSinceStartup;
+                    compteur++;
+                }
             }
         }
         else
@@ -309,6 +370,7 @@ public class UIManager : Manager
                         im2.sprite = Resources.Load<Sprite>("Images/photo_complete");
                         im2.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
                         im2.enabled = true;
+                        ground.enabled = true;
                         //background.enabled = true;
                         break;
                 }
@@ -327,7 +389,8 @@ public class UIManager : Manager
                 up = true;
 
                 //im.sprite = Resources.Load<Sprite>("Images/hopital");
-                //titre.text = "Wake Up";
+                titre.text = "";
+                sous_titre.text = "";
                 //titre.enabled = true;
                 titre.color = new Color(0.0f, 0.0f, 0.0f, 0.0f);
                 canvas.enabled = true;
